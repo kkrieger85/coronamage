@@ -2,6 +2,7 @@
   "name": "kkrieger/coronamage",
   "license": "OSL-3.0",
   "type": "magento-project",
+  "minimum-stability": "dev",
   "require": {
     "php": ">=7.2",
     "openmage/magento-lts": "1.9.4.*",
@@ -36,6 +37,7 @@
   ],
   "extra": {
     "magento-root-dir": "./htdocs",
-    "magento-deploystrategy": "copy"
+    "magento-deploystrategy": "copy",
+    "magento-force": "true"
   }
 }
