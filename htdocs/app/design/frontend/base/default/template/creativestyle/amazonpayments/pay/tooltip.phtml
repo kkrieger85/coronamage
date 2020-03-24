@@ -1,0 +1,37 @@
+<?php
+/**
+ * This file is part of the official Amazon Pay and Login with Amazon extension
+ * for Magento 1.x
+ *
+ * (c) 2017 creativestyle GmbH. All Rights reserved
+ *
+ * Distribution of the derivatives reusing, transforming or being built upon
+ * this software, is not allowed without explicit written permission granted
+ * by creativestyle GmbH
+ *
+ * @category   Creativestyle
+ * @package    Creativestyle_AmazonPayments
+ * @copyright  2017 creativestyle GmbH
+ * @author     Marek Zabrowarny <ticket@creativestyle.de>
+ */
+?>
+<?php /** @var Creativestyle_AmazonPayments_Block_Pay_Tooltip $this */ ?>
+<div id="amazon-pay-tooltip" class="amazon-pay-tooltip" style="display:none;">
+    <img src="<?php echo $this->getSkinUrl('creativestyle/images/logo_a-glyph_1x.png'); ?>"
+         alt="<?php echo $this->__('Amazon Pay'); ?>"/>
+    <?php echo $this->__($this->getTooltipText()); ?>
+</div>
+<script type="text/javascript">
+    AmazonPayments.setCallbacks({
+        onPayButtonRender: function (button) {
+            if (typeof Tooltip !== 'undefined') {
+                if (AmazonPayments.isMobile()) {
+                    button.insert('<div class="amazon-pay-tooltip-link"/>');
+                    new Tooltip(button.down('.amazon-pay-tooltip-link'), document.getElementById('amazon-pay-tooltip'));
+                } else {
+                    new Tooltip(button.down('img'), document.getElementById('amazon-pay-tooltip'));
+                }
+            }
+        }
+    });
+</script>

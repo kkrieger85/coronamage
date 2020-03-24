@@ -1,0 +1,16 @@
+app/code/community/Stripe/Payments                              app/code/community/Stripe/Payments
+
+app/design/adminhtml/base/default/layout/stripe_payments.xml    app/design/adminhtml/base/default/layout/stripe_payments.xml
+app/design/adminhtml/base/default/template/stripe               app/design/adminhtml/base/default/template/stripe
+
+app/design/frontend/base/default/layout/stripe_payments         app/design/frontend/base/default/layout/stripe_payments
+app/design/frontend/base/default/template/stripe                app/design/frontend/base/default/template/stripe
+
+app/etc/modules/Stripe_Payments.xml                             app/etc/modules/Stripe_Payments.xml
+
+app/locale/de_DE/Stripe_Payments.csv                            app/locale/de_DE/Stripe_Payments.csv
+
+lib/Stripe                                                      lib/Stripe
+
+skin/adminhtml/base/default/stripe_payments                     skin/adminhtml/base/default/stripe_payments
+skin/frontend/base/default/stripe_payments                      skin/frontend/base/default/stripe_payments

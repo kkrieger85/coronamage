@@ -1,0 +1,19 @@
+{
+    "name": "mhauri/mhauri-slack",
+    "license": "MIT",
+    "type": "magento-module",
+    "description": "Magento Slack allows you to send specific and/or custom events to a definable room.",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "authors":[
+        {
+            "name":"Marcel Hauri",
+            "email":"marcel@hauri.me"
+        },
+        {
+            "name":"Sander Mangel",
+            "email":"sander@sandermangel.nl"
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+<?php
+/**
+ * This file is part of the official Amazon Payments Advanced extension
+ * for Magento (c) creativestyle GmbH <amazon@creativestyle.de>
+ * All rights reserved
+ *
+ * Reuse or modification of this source code is not allowed
+ * without written permission from creativestyle GmbH
+ *
+ * @category   Creativestyle
+ * @package    Creativestyle_AmazonPayments
+ * @copyright  Copyright (c) 2015 creativestyle GmbH
+ * @author     Marek Zabrowarny / creativestyle GmbH <amazon@creativestyle.de>
+ */
+?>
+<div class="section-config">
+    <div class="entry-edit-head collapseable">
+        <a id="<?php echo $this->getHtmlId(); ?>-head" href="#" onclick="Fieldset.toggleCollapse('<?php echo $this->getHtmlId(); ?>'); return false;"><?php echo $this->helper('amazonpayments')->__('<span class="close">Click to reveal your </span>Amazon Seller Central config') ?></a>
+    </div>
+    <input id="<?php echo $this->getHtmlId(); ?>-state" name="config_state[<?php echo $this->getHtmlId(); ?>]" type="hidden" value="<?php echo $this->getState(); ?>">
+    <div class="fieldset config" id="<?php echo $this->getHtmlId(); ?>">
+        <table cellspacing="0" class="form-list">
+            <colgroup class="label"></colgroup>
+            <colgroup class="value"></colgroup>
+            <tbody>
+                <?php foreach ($this->getSellerCentralConfigOptions() as $option): ?>
+                    <tr>
+                        <td class="label"><?php echo $option->getLabel(); ?></td>
+                        <td class="value" style="width:auto;">
+                            <span id="<?php echo $this->getHtmlId() . '_' . $option->getId(); ?>"><?php echo $option->getValue(); ?></span>
+                            <?php if ($option->hasComment() && $option->getComment()): ?>
+                                <p style="width:auto;" class="note"><span><?php echo $option->getComment(); ?></span></p>
+                            <?php endif; ?>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script type="text/javascript">//<![CDATA[
+    Fieldset.applyCollapse('<?php echo $this->getHtmlId(); ?>');
+//]]></script>

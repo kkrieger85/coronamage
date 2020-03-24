@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * This file is part of the official Amazon Payments Advanced extension
+ * for Magento (c) creativestyle GmbH <amazon@creativestyle.de>
+ * All rights reserved
+ *
+ * Reuse or modification of this source code is not allowed
+ * without written permission from creativestyle GmbH
+ *
+ * @category   Creativestyle
+ * @package    Creativestyle_AmazonPayments
+ * @copyright  Copyright (c) 2014 - 2016 creativestyle GmbH
+ * @author     Marek Zabrowarny / creativestyle GmbH <amazon@creativestyle.de>
+ */
+-->
+<layout version="1.0.0">
+    <default>
+        <reference name="head">
+            <action method="addCss"><stylesheet>creativestyle/css/amazonpayments.css</stylesheet></action>
+        </reference>
+        <reference name="before_body_end">
+            <block type="core/template" template="creativestyle/amazonpayments/init.phtml" />
+        </reference>
+        <reference name="notifications">
+            <block type="amazonpayments/adminhtml_notifications" name="amazonpayments_notifications" template="creativestyle/amazonpayments/notifications.phtml"/>
+        </reference>
+    </default>
+    <adminhtml_amazonpayments_debug_index>
+        <reference name="content">
+            <block type="amazonpayments/adminhtml_debug" name="amazonpayments_debug_data" />
+        </reference>
+    </adminhtml_amazonpayments_debug_index>
+    <adminhtml_amazonpayments_log_api_index>
+        <reference name="content">
+            <block type="amazonpayments/adminhtml_log_api" name="amazonpayments_log_api"/>
+        </reference>
+    </adminhtml_amazonpayments_log_api_index>
+    <adminhtml_amazonpayments_log_exception_index>
+        <reference name="content">
+            <block type="amazonpayments/adminhtml_log_exception" name="amazonpayments_log_exception"/>
+        </reference>
+    </adminhtml_amazonpayments_log_exception_index>
+    <adminhtml_amazonpayments_log_ipn_index>
+        <reference name="content">
+            <block type="amazonpayments/adminhtml_log_ipn" name="amazonpayments_log_ipn"/>
+        </reference>
+    </adminhtml_amazonpayments_log_ipn_index>
+    <adminhtml_amazonpayments_log_api_view>
+        <reference name="head">
+            <action method="addCss"><stylesheet>creativestyle/css/amazonpayments-highlight.css</stylesheet></action>
+        </reference>
+        <reference name="before_body_end">
+            <block type="core/template" name="amazonpayments_log_api.js" template="creativestyle/amazonpayments/advanced/log/js.phtml"/>
+        </reference>
+    </adminhtml_amazonpayments_log_api_view>
+    <adminhtml_amazonpayments_log_exception_view>
+        <reference name="head">
+            <action method="addCss"><stylesheet>creativestyle/css/amazonpayments-highlight.css</stylesheet></action>
+        </reference>
+        <reference name="before_body_end">
+            <block type="core/template" name="amazonpayments_log_api.js" template="creativestyle/amazonpayments/advanced/log/js.phtml"/>
+        </reference>
+    </adminhtml_amazonpayments_log_exception_view>
+    <adminhtml_amazonpayments_log_ipn_view>
+        <reference name="head">
+            <action method="addCss"><stylesheet>creativestyle/css/amazonpayments-highlight.css</stylesheet></action>
+        </reference>
+        <reference name="before_body_end">
+            <block type="core/template" name="amazonpayments_log_api.js" template="creativestyle/amazonpayments/advanced/log/js.phtml"/>
+        </reference>
+    </adminhtml_amazonpayments_log_ipn_view>
+    <adminhtml_system_config_edit>
+        <reference name="head">
+            <action method="addJs"><file>creativestyle/adminhtml/amazonpayments.min.js</file></action>
+        </reference>
+    </adminhtml_system_config_edit>
+</layout>

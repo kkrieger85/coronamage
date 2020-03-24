@@ -1,0 +1,75 @@
+<?php
+/**
+ * This file is part of the official Amazon Pay and Login with Amazon extension
+ * for Magento 1.x
+ *
+ * (c) 2014 - 2017 creativestyle GmbH. All Rights reserved
+ *
+ * Distribution of the derivatives reusing, transforming or being built upon
+ * this software, is not allowed without explicit written permission granted
+ * by creativestyle GmbH
+ *
+ * @category   Creativestyle
+ * @package    Creativestyle_AmazonPayments
+ * @copyright  2014 - 2017 creativestyle GmbH
+ * @author     Marek Zabrowarny <ticket@creativestyle.de>
+ */
+?>
+<?php /** @var Creativestyle_AmazonPayments_Block_Checkout $this */ ?>
+<script type="text/javascript">
+    if (!window.Review)
+        var Review = function() {};
+</script>
+<script type="text/javascript">//<![CDATA[
+    var quoteBaseGrandTotal = <?php echo $this->getQuoteBaseGrandTotal(); ?>;
+    var checkQuoteBaseGrandTotal = quoteBaseGrandTotal;
+    var lastPrice;
+//]]></script>
+<div class="page-title">
+    <h1><?php echo $this->__('Amazon Pay'); ?></h1>
+</div>
+<?php echo $this->getChildHtml('capture_notice'); ?>
+<ol class="<?php echo $this->getContainerClass(); ?>" id="checkoutSteps">
+    <?php if ($this->showSandboxToolbox()): ?>
+        <li class="section store-widget">
+            <div class="step-title">
+                <h2><?php echo $this->helper('amazonpayments')->__('Sandbox Toolbox'); ?></h2>
+            </div>
+            <div class="section-content"><?php echo $this->getChildHtml('sandbox_toolbox'); ?></div>
+        </li>
+    <?php endif; ?>
+    <?php if (!$this->isQuoteVirtual()): ?>
+        <li id="apa-shipping" class="section amazon-widget">
+            <div id="addressBookWidgetDiv"></div>
+        </li>
+    <?php endif; ?>
+    <li id="apa-payment" class="section amazon-widget">
+        <div id="walletWidgetDiv"></div>
+    </li>
+    <?php if (!$this->isQuoteVirtual()): ?>
+        <form id="co-shipping-method-form" action="">
+            <li id="apa-shipping_method" class="section narrow-section store-widget">
+                <div class="step-title">
+                    <h2><?php echo $this->helper('checkout')->__('Shipping Method'); ?></h2>
+                </div>
+                <div class="section-content"><?php echo $this->getChildHtml('shipping_method'); ?></div>
+                <div class="section-please-wait"></div>
+            </li>
+            <?php if ($additional = $this->getChildHtml('additional')): ?>
+                <li id="apa-shipping_method_additional" class="section store-widget">
+                    <div class="step-title"></div>
+                    <div class="section-content" id="amazonpayments-checkout-shipping-method-additional-load">
+                        <?php echo $additional; ?>
+                    </div>
+                </li>
+            <?php endif; ?>
+        </form>
+    <?php endif; ?>
+    <li id="apa-review" class="section review-section store-widget">
+        <div class="step-title">
+            <h2><?php echo $this->helper('checkout')->__('Order Review'); ?></h2>
+        </div>
+        <div id="reviewWidgetDiv" class="section-content"><?php echo $this->getChildHtml('review'); ?></div>
+        <div class="section-please-wait"></div>
+    </li>
+</ol>

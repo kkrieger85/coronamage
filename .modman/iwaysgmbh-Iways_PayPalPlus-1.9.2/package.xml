@@ -1,0 +1,177 @@
+<?xml version="1.0"?>
+<package>
+    <name>iwaysgmbh+Iways_PayPalPlus</name>
+    <version>1.9.2</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL 3.0)</license>
+    <channel>cb363b8ad058adce244731151117f29b</channel>
+    <extends/>
+    <summary>PayPal PLUS is a solution where PayPal offers PayPal, Credit Card and ELV (pay upon invoice will be added in a later phase) as individual payment options on the payment selection page.</summary>
+    <description>PayPal PLUS is a solution where PayPal offers PayPal, Credit Card and ELV (pay upon invoice will be added in a later phase) as individual payment options on the payment selection page.&#xD;
+&#xD;
+Based on the payment method selected by the buyer, he will at a later stage be presented with either the PayPal Login page or an input mask for bank / credit card details.</description>
+    <notes>==== 1.9.2 ====&#xD;
+Removed all console.log&#xD;
+&#xD;
+==== 1.9.1 ====&#xD;
+Fixed JS Error with Firecheckout&#xD;
+&#xD;
+==== 1.9.0 ====&#xD;
+Added compatibility with Magento EE 1.12, 1.13, 1.14&#xD;
+Added token cache to reduce API-Calls&#xD;
+&#xD;
+==== 1.8.4 ====&#xD;
+Added hidden shipping tax to transaction taxes. Thanks to idowapro.&#xD;
+&#xD;
+==== 1.8.3 ====&#xD;
+Added support for PAYMENT.SALE.DENIED webhook event&#xD;
+&#xD;
+==== 1.8.2 ====&#xD;
+Fixed patch of empty shipping address for virtual orders&#xD;
+Removed some unnecessary console.log&#xD;
+&#xD;
+==== 1.8.1 ====&#xD;
+Fixed autoloader. Thanks to avstudnitz.&#xD;
+&#xD;
+==== 1.8.0 ====&#xD;
+Added payment method title changeable.&#xD;
+Added better Webhook backend exception.&#xD;
+Added support for Amasty Checkout&#xD;
+Added support for Awesome Checkout&#xD;
+Added support for Aheadworks Checkout&#xD;
+Added support for IDev_OPC 4.5 Checkout&#xD;
+Fixed TM_Firecheckout missing shipping costs on shipping method reset button.&#xD;
+Fixed TM_Firecheckout Ordercomment.&#xD;
+Removed Address from createPayment&#xD;
+&#xD;
+==== 1.7.4 ====&#xD;
+Patch Payment before redirect for standard Magento-Checkout (Possible Patch of missing shipping costs)&#xD;
+&#xD;
+==== 1.7.3 ====&#xD;
+Added PUI legal text&#xD;
+&#xD;
+==== 1.7.2 ====&#xD;
+Changed Handling of Partner ID&#xD;
+&#xD;
+==== 1.7.1 ====&#xD;
+Added discount for IWD&#xD;
+&#xD;
+==== 1.7.0 ====&#xD;
+Update PayPal Rest SDK to 1.6.4&#xD;
+Fixed parent transaction id&#xD;
+Fixed wrong PayPal payment id in Idev_OSC&#xD;
+Added partial refund&#xD;
+Show payment instructions for manual banktransfer payments on order success page&#xD;
+Added totals to patchPayment&#xD;
+Possible MagentoConnect File-&gt;directory fix&#xD;
+&#xD;
+==== 1.6.2 ====&#xD;
+Enable/disable loading indicator for PayPal Plus iframe&#xD;
+Fixed order status if PayPal payment is still pending (Now payment_review until Webhooks approves payment)&#xD;
+&#xD;
+==== 1.6.1 ====&#xD;
+Fixed suspected fraud for different currency&#xD;
+Changed payment method title for germany in frontend&#xD;
+&#xD;
+==== 1.6.0 ====&#xD;
+Added support for IWD_OSC&#xD;
+Fixed problem with store code in url&#xD;
+Changed first recieved transaction id from PayPal to transaction id from payment id&#xD;
+&#xD;
+==== 1.5.2 ====&#xD;
+Fixed state/status of authorizations and gateway-confirmation&#xD;
+Added last transaction number to order information&#xD;
+Added transfer order's id as invoice number setting&#xD;
+&#xD;
+==== 1.5.1 ====&#xD;
+Fixed paymentmethod choice for Idev_OSC&#xD;
+Updated PayPal SDK to 1.6&#xD;
+&#xD;
+==== 1.5.0 ====&#xD;
+Added support for Payment upon Invoice&#xD;
+&#xD;
+==== 1.4.5 ====&#xD;
+Added information block to checkout/success&#xD;
+&#xD;
+==== 1.4.4 ====&#xD;
+Fixed wrong locale code in presentation error&#xD;
+&#xD;
+==== 1.4.3 ====&#xD;
+Fixed empty order status Magento 1.7&#xD;
+Fixed suspected froud for Magento 1.7&#xD;
+Added localisation&#xD;
+&#xD;
+==== 1.4.2 ====&#xD;
+Force webhooks url to be https even if not&#xD;
+Fixed tax calculation with discount&#xD;
+&#xD;
+==== 1.4.1 ====&#xD;
+Fixed none responding payment method select&#xD;
+Removed unnecessary code line&#xD;
+&#xD;
+==== 1.4.0 ====&#xD;
+Added support for TM_Firecheckout and Magestore_Onestepcheckout&#xD;
+Added form key validateion for Magento 1.9&#xD;
+&#xD;
+==== 1.3.3 ====&#xD;
+Fixed not shown payment method information for Idev_OneStepCheckout&#xD;
+&#xD;
+==== 1.3.2 ====&#xD;
+Fixed agreements validate url and webhooks endpoint url (use force secure)&#xD;
+&#xD;
+==== 1.3.1 ====&#xD;
+Fixed observer config&#xD;
+&#xD;
+==== 1.3.0 ====&#xD;
+Added webhooks support:&#xD;
+- PAYMENT.SALE.REFUNDED&#xD;
+- PAYMENT.SALE.PENDING&#xD;
+- PAYMENT.SALE.COMPLETED&#xD;
+- RISK.DISPUTE.CREATED&#xD;
+Improved compatibility with Idev_OneStepCheckout&#xD;
+Updated PayPal REST SDK to 1.5.0&#xD;
+Hide all PayPal payment methods if PayPalPlus is active and rendered&#xD;
+&#xD;
+==== 1.2.3 ====&#xD;
+Changed help link to retrieve your api credentials&#xD;
+Fixed agreement validation&#xD;
+&#xD;
+==== 1.2.2 ====&#xD;
+Added credential validation on payment configuration save&#xD;
+&#xD;
+==== 1.2.1 ====&#xD;
+Added validation for billing agreements&#xD;
+Fixed single payment method view for Idev_OneStepCheckout&#xD;
+&#xD;
+==== 1.2.0 ====&#xD;
+Added better third party payment support and design&#xD;
+Fixed tax calculation errors&#xD;
+Fixed payment method rendering for Idev_OneStepCheckout&#xD;
+&#xD;
+==== 1.1.3 ====&#xD;
+Fixed directory path constant&#xD;
+&#xD;
+==== 1.1.2 ====&#xD;
+Added language information&#xD;
+&#xD;
+==== 1.1.1 ====&#xD;
+Fixed Javascript for payment select&#xD;
+&#xD;
+==== 1.1.0 ====&#xD;
+Added Idev_OneStepCheckout compatibility&#xD;
+Added Billsafe compatibility&#xD;
+Updated PayPal REST SDK to 1.3.0&#xD;
+Changed PayPalPlus Javascript library to online version&#xD;
+Fixed disappearing payment methods&#xD;
+&#xD;
+==== 1.0.0 ====&#xD;
+PayPal PLUS is a solution where PayPal offers PayPal, Credit Card and ELV (pay upon invoice will be added in a later phase) as individual payment options on the payment selection page.&#xD;
+Based on the payment method selected by the buyer, he will at a later stage be presented with either the PayPal Login page or an input mask for bank / credit card details.&#xD;
+</notes>
+    <authors><author><name>i-ways sales solutions GmbH</name><user>iways_magento</user><email>magento@i-ways.de</email></author><author><name>Robert Hillebrand</name><user>robat</user><email>hillebrand@i-ways.de</email></author></authors>
+    <date>2017-07-31</date>
+    <time>13:13:51</time>
+    <contents><target name="magecommunity"><dir name="Iways"><dir name="PayPalPlus"><dir name="Block"><dir name="Adminhtml"><dir name="System"><dir name="Config"><dir name="Fieldset"><file name="Payment.php" hash="b39107fb6a77525fa2c4e7eef9c00622"/></dir><file name="Thirdpartyinfo.php" hash="d9bee1de53c95b487e59c594d1fe80af"/></dir></dir></dir><dir name="Onepage"><dir name="Payment"><file name="Methods.php" hash="006b15175f8706610cb48371f0373c6b"/></dir><dir name="Review"><file name="Button.php" hash="5dcda2d8f87d2a535df73a633975e110"/></dir><file name="Review.php" hash="7f1f24a9f4e4b22d50e30eecb77642bf"/><file name="Success.php" hash="eb51c5e67aa090799496625f05bcb46f"/></dir><dir name="Payment"><file name="Form.php" hash="f2a2c177e0334f8335eba80b250843da"/><file name="Info.php" hash="7d580974e47366e30ad3c596f7b841ca"/></dir></dir><dir name="Helper"><file name="Data.php" hash="58d1511bef5e13e302dd89d24de8f0e5"/></dir><dir name="Model"><file name="Api.php" hash="72a28ddb59ee74a6eef1043698a65c62"/><dir name="Api2"><dir name="Order"><dir name="Rest"><dir name="Admin"><file name="V1.php" hash="4a2d2653d4185d813ec443a39f1deda6"/></dir><dir name="Customer"><file name="V1.php" hash="ab2c8ed8f7a513923924b5af173c88fa"/></dir></dir><file name="Rest.php" hash="bd1965bbe2a88d98fbc8dd8bfcce4211"/></dir><file name="Order.php" hash="4e710744d0bf27c1477f7d61ad8b1ed8"/></dir><file name="Autoloader.php" hash="3b98868a8edc6deb6a2e5d7d25a5daee"/><file name="Observer.php" hash="3753431dfa78a231f8695e3c35b2c5f7"/><dir name="Partner"><file name="Config.php" hash="af9d7da6c1d75809473472602c90a906"/></dir><file name="Payment.php" hash="2b68de1f7e6a870642459f8ed1ce4c52"/><dir name="System"><dir name="Config"><dir name="Source"><file name="Mode.php" hash="b5fa6748dc151b22f386952764cae366"/><file name="Thirdpartymoduls.php" hash="5400f09fb1f24e877cbd3a8c81f7e237"/></dir></dir></dir><dir name="Webhook"><file name="Event.php" hash="3250e4e203734414e279709a72e9f954"/></dir></dir><file name="RELEASE_NOTES.txt" hash="e387f37e7819b98b61326dd0048dcfaa"/><dir name="controllers"><file name="IndexController.php" hash="fe66f15b4c8fcbfdffd70d2af7b9528f"/></dir><dir name="etc"><file name="api2.xml" hash="b6960f0761b795e7cc420bcb7352eec0"/><file name="config.xml" hash="0c9715e232b212888ad058791d5642a3"/><file name="system.xml" hash="9a7b39b801e72b3f1d8ee25c0578ef99"/><file name="wsdl.xml" hash="cc0f30b1164095c431d8c86c7bb73aba"/><file name="wsi.xml" hash="fcf0fd620181006c2d38d3409749e0a5"/></dir><dir name="sql"><dir name="iways_paypalplus_setup"><file name="install-1.5.0.php" hash="78464255a7d1155d269eb154f83654d3"/><file name="upgrade-1.4.5-1.5.0.php" hash="78464255a7d1155d269eb154f83654d3"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="template"><dir name="paypalplus"><dir name="aw"><file name="payment_method.phtml" hash="d00061718170e45d23a275b8fe23cf23"/></dir><dir name="awesome"><dir name="payment"><file name="methods.phtml" hash="4bfa074dc9473435cba02397cfb67016"/></dir><dir name="review"><file name="button.phtml" hash="5f3ffab4e6d88f17d0da891d0db38ac4"/></dir></dir><dir name="firecheckout"><dir name="checkout"><dir name="payment"><file name="methods.phtml" hash="c546d9b01b149c09f07bec22c156b64d"/></dir></dir></dir><dir name="form"><file name="payment.phtml" hash="354ecdaa2f502648c2043f7d170681a2"/></dir><dir name="iwd"><file name="script.phtml" hash="bccba1a4a0a11f3031348e6330fb1c83"/></dir><dir name="magestore"><dir name="onestepcheckout"><file name="payment_method.phtml" hash="f87ac277d30d0f8d5a92b7847f0f0277"/></dir></dir><file name="methods.phtml" hash="82562b71ae53fe0ff53fbc09cd6054d6"/><dir name="onestepcheckout"><file name="payment_method.phtml" hash="bd9c241e8fcce7f70629f34c1bd104f9"/></dir><dir name="payment"><file name="info.phtml" hash="a7ce3e7f52e76b6438a3b15347b5efd6"/></dir><dir name="review"><file name="button.phtml" hash="e2b20dd0785b41a23020223f46bbef21"/></dir><file name="success.phtml" hash="67698e889de649c0f4e7b17b98c60b43"/></dir></dir><dir name="layout"><file name="iways_paypalplus.xml" hash="88173f60b158008260ca339ade636bac"/></dir></dir></dir></dir><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="template"><dir name="paypalplus"><dir><dir name="payment"><file name="info.phtml" hash="dac1490669ed6fe1242ca08802d5a92a"/><dir name="pdf"><file name="info.phtml" hash="534abe39ab464b71b04fecb0581dcf7a"/></dir></dir></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Iways_PayPalPlus.xml" hash="3c3b187e1a2860bd376e26173a9abd00"/></dir></target><target name="magelocale"><dir name="de_DE"><file name="Iways_PayPalPlus.csv" hash="7e974c0284653fbb5d75cabf35d04b26"/></dir></target><target name="magelib"><dir name="PayPal"><dir name="Api"><file name="Address.php" hash="9d0ab517cafbff834d19c5628f71c1d1"/><file name="Agreement.php" hash="346a1aec08bce0a94988c95c421bf26a"/><file name="AgreementDetails.php" hash="c28e00d1e2f43e715ee6dca41b4bbae0"/><file name="AgreementStateDescriptor.php" hash="7492486e86af3fa602fd40b3c6884f9c"/><file name="AgreementTransaction.php" hash="70333874a6d6e59f760eea62bee1ec49"/><file name="AgreementTransactions.php" hash="e3ab61b9adcbecf03ffafe3dab80f71e"/><file name="AlternatePayment.php" hash="299b1913efa1f5052f6525643b88251e"/><file name="Amount.php" hash="af5d5175363d779a696120439335b61e"/><file name="Authorization.php" hash="109c312c1b52182eb1885d9d8721377b"/><file name="BankAccount.php" hash="65d61f63e75ffd25fc368c50256f9484"/><file name="BankAccountsList.php" hash="4d7a9083615d9ed5f82834310ed9afba"/><file name="BankToken.php" hash="62f7ba5228d9e22ae4605fbdf8900364"/><file name="BaseAddress.php" hash="b1b7223a81a9f841c4b900fc42122c51"/><file name="Billing.php" hash="38246f4ccdd0e6af716f3a5710ab7f72"/><file name="BillingAgreementToken.php" hash="b414a03bddd46352124d38e0b8cd464d"/><file name="BillingInfo.php" hash="30423445dc705f10ae47fff4808be22e"/><file name="CancelNotification.php" hash="4e7be9c711e63d5e2c3c93ff719503c1"/><file name="Capture.php" hash="2b4d201cb7cffcb5213fbcf692e89baa"/><file name="CarrierAccount.php" hash="53d36ebafdfd57f8b3bb5ed59b5ae994"/><file name="CarrierAccountToken.php" hash="813e1e683efc5767a966b4e9e1932a22"/><file name="CartBase.php" hash="df26a3bab1a95828c86a65182d5a0327"/><file name="ChargeModel.php" hash="889ba10df61538ed2027b5af7cbf5e37"/><file name="Cost.php" hash="9f70896e83f6dba7a781b7a183c0ff9d"/><file name="CountryCode.php" hash="b4dfc82a2948f495f32615ba8c6648ed"/><file name="CreateProfileResponse.php" hash="9a554170a175aa9c82482a35cd1674f1"/><file name="Credit.php" hash="2a311a58dbfe6ece44fe068b3813a3e7"/><file name="CreditCard.php" hash="1b7242f2db7707ff8926805c74b24fd3"/><file name="CreditCardHistory.php" hash="a54d0cc39e54b937466ba5779be6082d"/><file name="CreditCardList.php" hash="321ef25d43a00d8a83291b6c99a660a0"/><file name="CreditCardToken.php" hash="db28406f0f7dc492633212800d7af26a"/><file name="CreditFinancingOffered.php" hash="7bfcd390d43f4f257966932407579482"/><file name="Currency.php" hash="ae31b2376a97260b4e0e6f0467ad2b37"/><file name="CurrencyConversion.php" hash="6903ea8093e972d434203442f0c9cbad"/><file name="CustomAmount.php" hash="cad62a51d15b03d1220ad6a32d572b93"/><file name="Details.php" hash="cb438e70e4e643bd809a3bdc4151a50e"/><file name="Error.php" hash="8e6c906c9b49a8da31a7d1de9ca56e1a"/><file name="ErrorDetails.php" hash="3c96de8a7428c3efb4cab6a0d30651fe"/><file name="ExtendedBankAccount.php" hash="e6320a07d3795a8a82532f4639a70a97"/><file name="ExternalFunding.php" hash="fca94624795066ed0c319598c870fd57"/><file name="FlowConfig.php" hash="cf61bf1df6b3e190d697fae6aeb18105"/><file name="FmfDetails.php" hash="640d162ae40cef473a14d92b4f7be3db"/><file name="FundingDetail.php" hash="0a59087007ccd6ae2e654e1d61877811"/><file name="FundingInstrument.php" hash="ff8c9933af8c830b2b2eac68b2ff3931"/><file name="FundingOption.php" hash="5a53081c94c25803898bb591fc36ca28"/><file name="FundingSource.php" hash="d75290b8f2686b9aaaa4490c31e35280"/><file name="FuturePayment.php" hash="3e659a3501ab07bd341a1127d4980f19"/><file name="HyperSchema.php" hash="e7aa1de64b9a33952405ef8dceeb6de7"/><file name="Image.php" hash="2a608e583497c27f42c24731f0bb3b3f"/><file name="Incentive.php" hash="f75e02e7b9f5555226e83936e933993c"/><file name="InputFields.php" hash="09a22ab55a6078e74771b0a5d5991e79"/><file name="InstallmentInfo.php" hash="1ffac8239c0db6e57fa4616f8efde768"/><file name="InstallmentOption.php" hash="cf1010ce916d70778331455564070f26"/><file name="Invoice.php" hash="a0a2129ef119e0479904a3228dadf672"/><file name="InvoiceAddress.php" hash="3f3498d6825eeb927b8386ffaaf7c5ff"/><file name="InvoiceItem.php" hash="fed23c1532005b90ea281bdda056f01e"/><file name="InvoiceSearchResponse.php" hash="842c4ff7472bc5f7be15e2e9aaf6dca9"/><file name="Item.php" hash="204e5862a8b1cb9ed113eb78a610ffa3"/><file name="ItemList.php" hash="23a6c7b9e6e83f5464e8793931f885f4"/><file name="Links.php" hash="6cd3ac5493d6b2f1641cb0f93460b226"/><file name="Measurement.php" hash="13b63a8d572754743643b16436498b21"/><file name="MerchantInfo.php" hash="4a6f53f224709e894fd07355e257c906"/><file name="MerchantPreferences.php" hash="07c0e1401dc4c4d8ff4784d9726324f9"/><file name="Metadata.php" hash="437a16b05945c27f660f4b9afdcd7743"/><file name="NameValuePair.php" hash="c6f7d380e6133815e3cd0f7967a6eb85"/><file name="Notification.php" hash="2467b4d11238b6feabd347dffd3fe5d0"/><file name="OpenIdAddress.php" hash="189e2eccf8cafc1f2916e1d54943b635"/><file name="OpenIdError.php" hash="73bb4a1d3dc4ef297aab469751d07019"/><file name="OpenIdSession.php" hash="349ff859610e5b3142470d708f9acc33"/><file name="OpenIdTokeninfo.php" hash="6e407e338785d8d6ec6536f384788b9c"/><file name="OpenIdUserinfo.php" hash="194e117cb7bb7d90e039b49b7254534f"/><file name="Order.php" hash="47f4c0da5745622458d0c635a3fb732d"/><file name="OverrideChargeModel.php" hash="6c7140dec5765fe9f2b87c34a5ab8ab9"/><file name="Patch.php" hash="575724b7d55fed3725bcb81f8ec8f3e7"/><file name="PatchRequest.php" hash="17d46d1cbd10d0dd8a35317fff7f6c49"/><file name="Payee.php" hash="743c1d3d49be4ed702ba8f1384a61269"/><file name="Payer.php" hash="ea48b7e59d8380b457a8057c65918a87"/><file name="PayerInfo.php" hash="4a763dff29c0fd32856cc462a6f05ce9"/><file name="Payment.php" hash="a9184f4fc8f5c9efd6918372cf440fb9"/><file name="PaymentCard.php" hash="798d75240a399228978cfb175e128263"/><file name="PaymentCardToken.php" hash="0e2910acb59a5566a317e21fcfba7642"/><file name="PaymentDefinition.php" hash="189e288bebe81baf05a0dbf55c2383f2"/><file name="PaymentDetail.php" hash="071712fe77c27e36585fd95e032ec1e0"/><file name="PaymentExecution.php" hash="02fdfbd0eef1fdea3b01416116763f8f"/><file name="PaymentHistory.php" hash="3461c19997d95143300d4beabcb06190"/><file name="PaymentInstruction.php" hash="bd5fa06d0da5565c952333748c6ebeea"/><file name="PaymentOptions.php" hash="20ba1e4b2d9c56d369f7871a7da059bb"/><file name="PaymentTerm.php" hash="a7d139c47db1a680a9bb04b57f491917"/><file name="Payout.php" hash="1d06f076cb550354e29898b72975e737"/><file name="PayoutBatch.php" hash="be3afe9fc6a4cfa233d8557743ebbd39"/><file name="PayoutBatchHeader.php" hash="3d5912b2e922f189d9912e092d80191a"/><file name="PayoutItem.php" hash="ad510dbbe583b78226ae813f474f5582"/><file name="PayoutItemDetails.php" hash="9b9510b953d0b2ebf95830ad48ddb0f8"/><file name="PayoutSenderBatchHeader.php" hash="0db9dd2031d36c7bd728ae8d3845b3b6"/><file name="Phone.php" hash="6c137d6984692552a86310a52a625c7f"/><file name="Plan.php" hash="ec8dcb5a38993a3c43e51d623a87438b"/><file name="PlanList.php" hash="46ff82f188e0aeeb6891c626c5a132dc"/><file name="PotentialPayerInfo.php" hash="e6fa5bfca5821812ad4b034d8cf64e9e"/><file name="Presentation.php" hash="58a1163f981aba36d394bcf1b24f04e4"/><file name="PrivateLabelCard.php" hash="85dc8e870a1c644519009c47b38a8d93"/><file name="ProcessorResponse.php" hash="65caffc4473a29b5e509e0698203c6dd"/><file name="RecipientBankingInstruction.php" hash="9149af25e66a70f8321bca3e03e909af"/><file name="RedirectUrls.php" hash="f9adcf2e0ac56095217bac6372340536"/><file name="Refund.php" hash="efa7c77783c44df54bdea689a3618bdb"/><file name="RefundDetail.php" hash="10b4e38e9d9260f78a313a74e18e7508"/><file name="RelatedResources.php" hash="7757e2721aadb739fed0eb9a8d629df8"/><file name="Sale.php" hash="4fdafb87630808b6aba3cd5fbe72ca00"/><file name="Search.php" hash="b85046daf5b49235678f1eebbf2bd665"/><file name="ShippingAddress.php" hash="faa92bcb11b7fc815d48298b47b8a1f9"/><file name="ShippingCost.php" hash="83e3e2a71a3ac5197f3dd7a16574d19b"/><file name="ShippingInfo.php" hash="a3fb2089bdab64a4790692f7f2dabf81"/><file name="Tax.php" hash="e0cfea9a1395eb1913faf76b04c6dcb2"/><file name="Terms.php" hash="2c605993f3611d02b70cbb87b2c76b00"/><file name="Transaction.php" hash="32175e204772a4ac7894578a3b8ea1e4"/><file name="TransactionBase.php" hash="054f66bc789a90a9dbbe1c7dea0a00ed"/><file name="Transactions.php" hash="7aa6a708a39835666dac689dec34b623"/><file name="WebProfile.php" hash="277888d15bca634c1496583a9180a7e0"/><file name="Webhook.php" hash="a543c0f07a8175c304fd2db1662df0e4"/><file name="WebhookEvent.php" hash="bbfadf2829d1ddc36e0b97f567e29db6"/><file name="WebhookEventList.php" hash="48b3f6d97932cca67bf5a050163b2381"/><file name="WebhookEventType.php" hash="f6039c6d5044c7dedff03955554ed61f"/><file name="WebhookEventTypeList.php" hash="cb6ad875f0774b4127c6882f30c6c522"/><file name="WebhookList.php" hash="ce78a04e84a864895a4942ca1d13c2fd"/></dir><dir name="Auth"><file name="OAuthTokenCredential.php" hash="8231d932c45ba76928fa5c6ea38de158"/></dir><dir name="Cache"><file name="AuthorizationCache.php" hash="1b5935ad6dd8e5d4bf907006f5d36d54"/></dir><dir name="Common"><file name="ArrayUtil.php" hash="b41119fb9b40bdb3bb137c5f716e2666"/><file name="PayPalModel.php" hash="86da41d7f429704dad19a1426a640f09"/><file name="PayPalResourceModel.php" hash="2ac746c97a26fd57aa74d523d45e4fb9"/><file name="PayPalUserAgent.php" hash="5544e7dfd56d5c378cb411caa974dc1b"/><file name="ReflectionUtil.php" hash="ce8f00a362260a11b5bbc86f86fe3105"/></dir><dir name="Converter"><file name="FormatConverter.php" hash="f55eb6b3daa76cb425ea380850fb94a7"/></dir><dir name="Core"><file name="PayPalConfigManager.php" hash="5c68196e2aa57d3d5887849e20f1ff16"/><file name="PayPalConstants.php" hash="ef0e24de1382667bf52b1744281366cc"/><file name="PayPalCredentialManager.php" hash="2cd3b8246fa17ffffdc0f7e736b1b76f"/><file name="PayPalHttpConfig.php" hash="7e38f1fe721a864f1d99bfa0025157d4"/><file name="PayPalHttpConnection.php" hash="2ace269f17b5eda4ea30b7fffca10e16"/><file name="PayPalLoggingLevel.php" hash="24d4ebd6129f619adba2814a54cc3c80"/><file name="PayPalLoggingManager.php" hash="d18d38b49436b16e72a6d8b2c5b5591f"/><file name="cacert.pem" hash="d4b2ab71266521d7376ebeee490fba2b"/></dir><dir name="Exception"><file name="PayPalConfigurationException.php" hash="f14c778e88c9a8c917a1d25fc250d594"/><file name="PayPalConnectionException.php" hash="6b125eb06dce5dec2a44d166b505fe18"/><file name="PayPalInvalidCredentialException.php" hash="3fa38244fdc20de74fda7892c4b04f8d"/><file name="PayPalMissingCredentialException.php" hash="72f45ecc61324ce36f4cb097e355c081"/></dir><dir name="Handler"><file name="IPayPalHandler.php" hash="03b0eb03e1b5cfc5d90ccda1a768cf8c"/><file name="OauthHandler.php" hash="6c09466149ee92f18aebfd2c991599bf"/><file name="RestHandler.php" hash="4842641a6071decb8733930214e9b54b"/></dir><dir name="Rest"><file name="ApiContext.php" hash="20391a33cb068b75e3692b9d89d2cc35"/><file name="IResource.php" hash="d2a7e80b6373a9112e9a006668d34bbe"/></dir><dir name="Security"><file name="Cipher.php" hash="1ca619c0bf0a57129d6497794413c238"/></dir><dir name="Transport"><file name="PayPalRestCall.php" hash="4f9f3c84cf3b557a80ab09818af682da"/></dir><dir name="Validation"><file name="ArgumentValidator.php" hash="d85d4e0c3662976d0f69217221beceb5"/><file name="JsonValidator.php" hash="353b6bd0ea99b2355850c961b89e1791"/><file name="NumericValidator.php" hash="1e40d8506333053a316176ecbee42dc7"/><file name="UrlValidator.php" hash="55f326f8e8f5321e721ef8021959958f"/></dir></dir></target><target name="mageskin"><dir name="frontend"><dir name="base"><dir name="default"><dir name="css"><file name="iways-paypalplus.css" hash="873919de9c7b1e29346b64319b15d420"/></dir><dir name="images"><dir name="iways"><file name="checkmark.png" hash="9879d16c7618d54ca45e984406eb3934"/></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.3.7</min><max>7.1.0</max></php></required></dependencies>
+</package>

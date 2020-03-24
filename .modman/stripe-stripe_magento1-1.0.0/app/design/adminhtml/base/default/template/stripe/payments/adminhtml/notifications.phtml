@@ -1,0 +1,8 @@
+<?php if (!$this->areWebhooksConfigured()): ?>
+
+<div class="notification-global">
+    <strong>Stripe Webhooks have not yet been configured</strong> -
+    Please refer to the <a href="<?php echo $this->getStripeWebhooksConfigurationLink(); ?>" target="_blank">documentation</a> for instructions on how to set up your Stripe account.
+</div>
+
+<?php endif; ?>

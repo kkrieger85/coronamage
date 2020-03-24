@@ -1,0 +1,49 @@
+<?php
+/**
+ * This file is part of the official Amazon Pay and Login with Amazon extension
+ * for Magento 1.x
+ *
+ * (c) 2019 creativestyle GmbH. All Rights reserved
+ *
+ * Distribution of the derivatives reusing, transforming or being built upon
+ * this software, is not allowed without explicit written permission granted
+ * by creativestyle GmbH
+ *
+ * @category   Creativestyle
+ * @package    Creativestyle_AmazonPayments
+ * @copyright  2019 creativestyle GmbH
+ * @author     Marek Zabrowarny <ticket@creativestyle.de>
+ */
+?>
+<script type="text/javascript">
+    if (!window.Review)
+        var Review = function() {};
+</script>
+<div class="page-title">
+    <h1><?php echo $this->__('Amazon Pay'); ?></h1>
+</div>
+<ul class="messages">
+    <li class="notice-msg">
+        <ul>
+            <li>
+                <span><?php echo $this->__(
+                    'There has been a problem with the selected payment method from your Amazon account, '
+                    . 'please update the payment method or choose another one. '
+                    . 'If you are using a credit card, make sure you have sufficient funds on the card and try again.'
+                ); ?></span>
+            </li>
+        </ul>
+    </li>
+</ul>
+<ol class="<?php echo $this->getContainerClass(); ?>" id="checkoutSteps">
+    <li id="apa-payment" class="section amazon-widget">
+        <div id="walletWidgetDiv"></div>
+    </li>
+    <li id="apa-review" class="section review-section store-widget">
+        <div class="step-title">
+            <h2><?php echo $this->helper('checkout')->__('Order Review'); ?></h2>
+        </div>
+        <div id="reviewWidgetDiv" class="section-content"><?php echo $this->getChildHtml('review'); ?></div>
+        <div class="section-please-wait"></div>
+    </li>
+</ol>

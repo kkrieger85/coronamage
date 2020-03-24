@@ -1,0 +1,74 @@
+<?php
+/**
+ * This file is part of the official Amazon Payments Advanced extension
+ * for Magento (c) creativestyle GmbH <amazon@creativestyle.de>
+ * All rights reserved
+ *
+ * Reuse or modification of this source code is not allowed
+ * without written permission from creativestyle GmbH
+ *
+ * @category   Creativestyle
+ * @package    Creativestyle_AmazonPayments
+ * @copyright  Copyright (c) 2016 creativestyle GmbH
+ * @author     Marek Zabrowarny / creativestyle GmbH <amazon@creativestyle.de>
+ */
+?>
+<div class="section-config">
+    <div class="entry-edit-head collapseable">
+        <a id="<?php echo $this->getHtmlId(); ?>-head" href="#" onclick="Fieldset.toggleCollapse('<?php echo $this->getHtmlId(); ?>'); return false;"><?php echo $this->helper('amazonpayments')->__('Don\'t have a merchant account yet? Register here') ?></a>
+    </div>
+    <input id="<?php echo $this->getHtmlId(); ?>-state" name="config_state[<?php echo $this->getHtmlId(); ?>]" type="hidden" value="<?php echo $this->getState(); ?>">
+    <div class="fieldset config" id="<?php echo $this->getHtmlId(); ?>">
+        <table cellspacing="0" class="form-list" style="width:100%;">
+            <colgroup class="label"></colgroup>
+            <colgroup class="value"></colgroup>
+            <tbody>
+                <tr>
+                    <td class="label" colspan="2"><strong><?php echo $this->helper('amazonpayments')->__('Choose your payment region and click to quick-register.'); ?></strong></td>
+                </tr>
+                <tr>
+                    <td class="label"><?php echo $this->helper('amazonpayments')->__('Payment Region'); ?></td>
+                    <td class="value" style="width:auto;">
+                        <select id="simple-path-registration-region">
+                            <?php foreach ($this->getAccountRegionOptions() as $accountRegion): ?>
+                                <option value="<?php echo $accountRegion['value']; ?>"<?php if ($this->getDefaultAccountRegion() == $accountRegion['value']): ?>selected="selected"<?php endif; ?>><?php echo $accountRegion['label']; ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label"></td>
+                    <td class="value" style="width:auto;">
+                        <input type="hidden" id="simple-path-registration-language" value="<?php echo $this->getDefaultLanguage(); ?>"/>
+                        <button id="simple-path-registration-submit" title="<?php echo $this->helper('amazonpayments')->__('Quick-register Merchant account'); ?>" type="button" class="scalable save"><span><span><span><?php echo $this->helper('amazonpayments')->__('Quick-register Merchant account'); ?></span></span></span></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label"><?php echo $this->helper('amazonpayments')->__('Seller Central configuration'); ?></td>
+                    <td class="value" style="width:auto;">
+                        <textarea id="simple-path-validation-json" class="textarea" rows="2" cols="15"></textarea>
+                        <p class="note"><span><?php echo $this->helper('amazonpayments')->__('Copy your keys from Seller Central (JSON) and paste them here'); ?></span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label"></td>
+                    <td class="value" style="width:auto;">
+                        <button id="simple-path-validation-submit" title="<?php echo $this->helper('amazonpayments')->__('Validate Amazon Payments account'); ?>" type="button" class="scalable save"><span><span><span><?php echo $this->helper('amazonpayments')->__('Validate Amazon Payments account'); ?></span></span></span></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4"><div id="simple-path-validation-result"></div></td>
+                </tr>
+                <tr id="simple-path-validation-result-buttons" style="display:none;">
+                    <td colspan="4" style="text-align:center;">
+                        <button id="simple-path-validation-save-button" title="<?php echo $this->helper('amazonpayments')->__('Use these credentials and save'); ?>" type="button" class="scalable save"><span><span><span><?php echo $this->helper('amazonpayments')->__('Use these credentials and save'); ?></span></span></span></button>&nbsp;
+                        <button id="simple-path-validation-cancel-button" title="<?php echo $this->helper('amazonpayments')->__('Cancel'); ?>" type="button" class="scalable delete"><span><span><span><?php echo $this->helper('amazonpayments')->__('Cancel'); ?></span></span></span></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script type="text/javascript">//<![CDATA[
+    Fieldset.applyCollapse('<?php echo $this->getHtmlId(); ?>');
+//]]></script>

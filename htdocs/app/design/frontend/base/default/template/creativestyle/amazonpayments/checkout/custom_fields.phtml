@@ -1,0 +1,34 @@
+<?php
+/**
+ * This file is part of the official Amazon Pay and Login with Amazon extension
+ * for Magento 1.x
+ *
+ * (c) 2019 creativestyle GmbH. All Rights reserved
+ *
+ * Distribution of the derivatives reusing, transforming or being built upon
+ * this software, is not allowed without explicit written permission granted
+ * by creativestyle GmbH
+ *
+ * @category   Creativestyle
+ * @package    Creativestyle_AmazonPayments
+ * @copyright  2019 creativestyle GmbH
+ * @author     Marek Zabrowarny <ticket@creativestyle.de>
+ */
+?>
+<form id="amazonpayments-custom-fields" onsubmit="return false;">
+    <div class="fieldset">
+        <ul class="form-list">
+            <li class="control">
+                <input
+                    type="checkbox"
+                    name="custom_fields[customer][is_subscribed]"
+                    id="is_subscribed"
+                    value="1"
+                    title="<?php echo Mage::helper('core')->quoteEscape($this->__('Sign Up for Newsletter')) ?>"
+                    class="checkbox"
+                />
+                <label for="is_subscribed"><?php echo $this->__('Sign Up for Newsletter') ?></label>
+            </li>
+        </ul>
+    </div>
+</form>

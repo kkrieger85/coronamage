@@ -1,0 +1,44 @@
+<?php
+/**
+ * This file is part of the official Amazon Pay and Login with Amazon extension
+ * for Magento 1.x
+ *
+ * (c) 2014 - 2017 creativestyle GmbH. All Rights reserved
+ *
+ * Distribution of the derivatives reusing, transforming or being built upon
+ * this software, is not allowed without explicit written permission granted
+ * by creativestyle GmbH
+ *
+ * @category   Creativestyle
+ * @package    Creativestyle_AmazonPayments
+ * @copyright  2014 - 2017 creativestyle GmbH
+ * @author     Marek Zabrowarny <ticket@creativestyle.de>
+ */
+?>
+<form id="sandbox-simulation">
+    <fieldset class="sandbox-simulation">
+        <p><?php echo $this->__('In Sandbox Mode you can simulate certain states of selected payment objects.'); ?></p>
+        <select id="simulation_object" name="simulation[object]" style="display:none;"></select>
+        <select id="simulation_state" name="simulation[state]" style="display:none;"></select>
+        <select id="simulation_reason" name="simulation[reason]" style="display:none;"></select>
+    </fieldset>
+</form>
+<script type="text/javascript"
+        src="<?php echo $this->getJsUrl('creativestyle/amazonpayments.toolbox.min.js'); ?>"></script>
+<script type="text/javascript">
+    document.observe('dom:loaded', function() {
+        AmazonPaymentsToolbox.setup(
+            <?php echo $this->getSimulationOptions(); ?>,
+            {
+                object: $('simulation_object'),
+                state: $('simulation_state'),
+                reason: $('simulation_reason')
+            },
+            {
+                object: '<?php echo $this->jsQuoteEscape($this->__('--- Select object ---')); ?>',
+                state: '<?php echo $this->jsQuoteEscape($this->__('--- Select state to simulate ---')); ?>',
+                reason: '<?php echo $this->jsQuoteEscape($this->__('--- Select reason code ---')); ?>'
+            }
+        );
+    });
+</script>

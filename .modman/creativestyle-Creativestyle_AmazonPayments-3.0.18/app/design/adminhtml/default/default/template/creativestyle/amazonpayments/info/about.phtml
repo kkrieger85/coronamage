@@ -1,0 +1,47 @@
+<?php
+/**
+ * This file is part of the official Amazon Pay and Login with Amazon extension
+ * for Magento 1.x
+ *
+ * (c) 2018 creativestyle GmbH. All Rights reserved
+ *
+ * Distribution of the derivatives reusing, transforming or being built upon
+ * this software, is not allowed without explicit written permission granted
+ * by creativestyle GmbH
+ *
+ * @category   Creativestyle
+ * @package    Creativestyle_AmazonPayments
+ * @copyright  2018 creativestyle GmbH
+ * @author     Marek Zabrowarny <ticket@creativestyle.de>
+ */
+?>
+<div class="section-config">
+    <div class="entry-edit-head collapseable">
+        <a id="<?php echo $this->getHtmlId(); ?>-head" href="#" onclick="Fieldset.toggleCollapse('<?php echo $this->getHtmlId(); ?>'); return false;">1. <?php echo $this->helper('amazonpayments')->__('About Amazon Pay') ?></a>
+    </div>
+    <input id="<?php echo $this->getHtmlId(); ?>-state" name="config_state[<?php echo $this->getHtmlId(); ?>]" type="hidden" value="<?php echo $this->getState(); ?>">
+    <div class="fieldset config" id="<?php echo $this->getHtmlId(); ?>">
+        <p>Amazon Pay is a payment and checkout method which allows hundreds of millions of Amazon users to pay  easily and quickly on your Magento website. Your website receives the customer's data and automatically creates their accounts on your webiste.</p>
+        <p>Amazon Pay can help you to:
+            <ul>
+                <li>Attract new customers</li>
+                <li>Improve your conversion rate</li>
+                <li>Reduce fraud</li>
+                <li>Build customer loyalty</li>
+            </ul>
+        </p>
+        <p>Simply follow these 4 steps:
+            <ol>
+                <li>Sign up for an Amazon Pay account*</li>
+                <li>Connect your Amazon Payments account with Magento</li>
+                <li>Configure and activate the plugin</li>
+                <li>Inform your custoòers that your website accepts Amazon Pay</li>
+            </ol>
+        </p>
+        <p>* Before you start the registration, make sure you sign out of all Amazon accounts you might have. Use an email address that you have never used for any Amazon account.</p>
+        <p>If you have an Amazon Seller account (Selling on Amazon), sign out and use a different address to register your Amazon Payments account.</p>
+    </div>
+</div>
+<script type="text/javascript">//<![CDATA[
+    Fieldset.applyCollapse('<?php echo $this->getHtmlId(); ?>');
+//]]></script>

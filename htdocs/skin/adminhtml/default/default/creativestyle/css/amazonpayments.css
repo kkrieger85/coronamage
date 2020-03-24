@@ -1,0 +1,109 @@
+.creativestyle-info {
+    border: 0;
+    background: #e7efef;
+    margin-bottom: 10px;
+    padding: 0;
+    height: auto;
+}
+.creativestyle-info .creativestyle-logo {
+    float: right;
+    padding: 5px;
+}
+.creativestyle-info .creativestyle-command {
+    border: 1px solid #cccccc;
+    background: #ffffff;
+    padding: 15px;
+    text-align: left;
+    margin: 10px 0;
+    font-weight: bold;
+}
+.creativestyle-info h3 {
+    color: #ea7601;
+}
+.creativestyle-info h3 small {
+    font-weight: normal;
+    font-size: 80%;
+    font-style: italic;
+}
+.creativestyle-info .fieldset {
+    margin-bottom: 0;
+    padding: 10px 15px !important;
+}
+
+h3.amazon-payments-advanced-header {
+    background: url('../images/amazon-payments-advanced-header.png') no-repeat scroll 0 0 transparent;
+    height: 0;
+    overflow: hidden;
+    padding: 24px 0 0;
+    width: 155px;
+    margin-bottom: 5px;
+}
+
+ul.tabs a.amazon-payments-advanced-section, ul.tabs a.amazon-payments-advanced-section:hover {
+    background: url('../../images/tabs_span_bg.gif') repeat-x scroll 0 100% transparent;
+    border-bottom: medium none;
+    padding: 0.7em 0.5em 0.5em 1.5em;
+}
+
+ul.tabs a.amazon-payments-advanced-section.active, ul.tabs a.amazon-payments-advanced-section.active:hover {
+    background-color: #ffffff;
+}
+
+ul.tabs a.amazon-payments-advanced-section span, ul.tabs a.amazon-payments-advanced-section:hover span {
+    background: url('../images/amazon-payments-advanced-section.png') no-repeat scroll 0 0 transparent;
+    width: 116px;
+    height: 0;
+    overflow: hidden;
+    padding: 18px 0 0;
+}
+
+.head-amazonpayments-debug,
+.head-amazonpayments-log {
+    background-image: url('../images/logo_a-glyph_16.png');
+}
+
+.section-config .section-config .entry-edit-head .open span.close {
+    display: none;
+}
+
+.amazon-payments-config-subtitle td.label {
+    font-weight: bold;
+    padding-top: 10px !important;
+    border-bottom: solid 1px #c8c8c8 !important;
+}
+
+.amazon-payments-config-subtitle td.label label {
+    width: auto;
+}
+
+.amazon-payments-expert-mode {
+    padding-top: 10px;
+}
+
+.amazon-payments-expert-mode a {
+    padding: 0;
+    display: inline-block;
+    border-bottom: 1px dotted #f67610;
+    color: #f67610!important;
+    line-height: 1.1;
+    white-space: nowrap;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.amazon-payments-expert-mode a:after {
+    content: '';
+    width: 7px;
+    height: 5px;
+    background: url('../../images/bkg_config-advanced.png') no-repeat 0 0;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: -13px;
+    margin-left: 5px;
+}
+
+.amazon-payments-expert-mode a.open:after {
+    background-position: 0 -5px;
+}

@@ -1,0 +1,84 @@
+<?php
+/**
+ * This file is part of the official Amazon Payments Advanced extension
+ * for Magento (c) creativestyle GmbH <amazon@creativestyle.de>
+ * All rights reserved
+ *
+ * Reuse or modification of this source code is not allowed
+ * without written permission from creativestyle GmbH
+ *
+ * @category   Creativestyle
+ * @package    Creativestyle_AmazonPayments
+ * @copyright  Copyright (c) 2014 - 2016 creativestyle GmbH
+ * @author     Marek Zabrowarny / creativestyle GmbH <amazon@creativestyle.de>
+ */
+?>
+<?php /** @var Creativestyle_AmazonPayments_Block_Adminhtml_Info $this */ ?>
+<div class="creativestyle-info section-config">
+    <div class="section-config">
+        <div class="entry-edit-head a-right">
+            <a style="background:0;" href="https://sellercentral-europe.amazon.com" target="_blank"><?php echo $this->helper('amazonpayments')->__('Amazon Seller Central'); ?></a> |
+            <a style="background:0;" href="http://amazon.creativestyle.de" target="_blank"><?php echo $this->helper('amazonpayments')->__('Extension documentation'); ?></a> |
+            <a style="background:0;" href="https://www.creativestyle.de/magento" target="_blank"><?php echo $this->helper('amazonpayments')->__('More about <em>creativestyle</em>'); ?></a>
+        </div>
+        <div class="fieldset config">
+            <img class="creativestyle-logo" src="<?php echo $this->getSkinUrl('creativestyle/images/amazon-payments-advanced-creativestyle-logo.png'); ?>" alt="Amazon Payments" />
+            <h3><?php echo $this->__('Amazon Pay and Login with Amazon'); ?><small> (v. <?php echo $this->getExtensionVersion(); ?>)</small></h3>
+            <p style="clear:both;"><?php echo $this->__('This extension integrates easily your Magento shop with Amazon Pay service.'); ?></p>
+        </div>
+    </div>
+    <?php echo $this->getRegisterHtml(); ?>
+    <?php echo $this->getSellerCentralConfigHtml(); ?>
+</div>
+<script type="text/javascript">//<![CDATA[
+    document.observe('dom:loaded', function() {
+        new AmazonPaymentsAdmin({
+            config: {
+                unique_id: '<?php echo $this->getUniqueId(); ?>',
+                fields: {
+                    merchant_id: $('amazonpayments_basic_merchant_id'),
+                    client_id: $('amazonpayments_basic_client_id'),
+                    access_key: $('amazonpayments_basic_access_key'),
+                    secret_key: $('amazonpayments_basic_secret_key'),
+                    region: $('amazonpayments_basic_region')
+                },
+                layers: {
+                    seller_central: 'simple-path-seller-central'
+                },
+                messages: {
+                    invalid_json: '<?php echo $this->jsQuoteEscape($this->getInvalidJsonMsg()); ?>'
+                },
+                urls: {
+                    sandbox_ipn: '<?php echo $this->getIpnUrl(true); ?>',
+                    production_ipn: '<?php echo $this->getIpnUrl(false); ?>',
+                    js_origins: <?php echo $this->getJsOrigins(); ?>,
+                    return_urls: <?php echo $this->getReturnUrls(); ?>
+                }
+            },
+            registration: {
+                id: 'simple-path-registration',
+                region: $('simple-path-registration-region'),
+                language: $('simple-path-registration-language'),
+                submit: $('simple-path-registration-submit')
+            },
+            validation: {
+                id: 'amazonpayments_quick_configuration',
+                url: '<?php echo $this->getValidationUrl(); ?>',
+                json_field: $('simple-path-validation-json'),
+                submit: $('simple-path-validation-submit'),
+                result: $('simple-path-validation-result'),
+                result_buttons: $('simple-path-validation-result-buttons'),
+                use_button: $('simple-path-validation-use-button'),
+                save_button: $('simple-path-validation-save-button'),
+                cancel_button: $('simple-path-validation-cancel-button'),
+                placeholder: '{\n' +
+                    '    "merchant_id": "YOUR SELLER ID",\n' +
+                    '    "access_key": "YOUR ACCESS KEY ID",\n' +
+                    '    "secret_key": "YOUR SECRET ACCESS KEY",\n' +
+                    '    "client_id": "YOUR CLIENT ID",\n' +
+                    '    "client_secret": "YOUR CLIENT SECRET"\n' +
+                    '}'
+            }
+        });
+    });
+//]]></script>

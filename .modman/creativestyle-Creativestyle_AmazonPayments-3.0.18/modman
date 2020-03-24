@@ -1,0 +1,21 @@
+app/code/community/Creativestyle/AmazonPayments                 app/code/community/Creativestyle/AmazonPayments
+
+app/design/adminhtml/default/default/layout/amazonpayments.xml  app/design/adminhtml/default/default/layout/amazonpayments.xml
+app/design/adminhtml/default/default/template/creativestyle     app/design/adminhtml/default/default/template/creativestyle
+
+app/design/frontend/base/default/layout/amazonpayments.xml      app/design/frontend/base/default/layout/amazonpayments.xml
+app/design/frontend/base/default/template/creativestyle         app/design/frontend/base/default/template/creativestyle
+
+app/etc/modules/Creativestyle_AmazonPayments.xml                app/etc/modules/Creativestyle_AmazonPayments.xml
+
+app/locale/de_DE/template/email/amazon_payments_failed.html     app/locale/de_DE/template/email/amazon_payments_failed.html
+app/locale/de_DE/Creativestyle_AmazonPayments.csv               app/locale/de_DE/Creativestyle_AmazonPayments.csv
+
+js/creativestyle                                                js/creativestyle
+
+lib/AmazonPay                                                   lib/AmazonPay
+
+skin/adminhtml/default/default/creativestyle                    skin/adminhtml/default/default/creativestyle
+
+skin/frontend/base/default/creativestyle                        skin/frontend/base/default/creativestyle
+skin/frontend/rwd/default/creativestyle                         skin/frontend/rwd/default/creativestyle

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Iways_PayPalPlus>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Mage_Paypal />
+                <Mage_Api />
+                <Mage_Api2 />
+            </depends>
+        </Iways_PayPalPlus>
+    </modules>
+</config>

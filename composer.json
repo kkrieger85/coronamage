@@ -1,0 +1,41 @@
+{
+  "name": "kkrieger/coronamage",
+  "license": "OSL-3.0",
+  "type": "magento-project",
+  "require": {
+    "php": ">=7.2",
+    "openmage/magento-lts": "1.9.4.*",
+    "magento-hackathon/magento-composer-installer": "^3.1 || ^2.1",
+    "kkrieger85/magento-module-security-txt": "dev-master",
+    "mhauri/mhauri-slack": "^0.5.0",
+    "meanbee/footerjs": "^0.1.3",
+    "dermodpro/basepricepro": "dev-master",
+    "aoepeople/aoe_scheduler": "^1.5"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:kkrieger85/magento-module-security-txt.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:kkrieger85/magento-slack-1.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@bitbucket.org:kkrieger85/dmp_basepricepro.git"
+    }
+  ],
+  "description": "Magento package based on OpenMage-lts",
+  "authors": [
+    {
+      "name": "Kevin Krieger",
+      "email": "kk@kkrieger.de",
+      "role": "Developer"
+    }
+  ],
+  "extra": {
+    "magento-root-dir": "./htdocs",
+    "magento-deploystrategy": "copy"
+  }
+}

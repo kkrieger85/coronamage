@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<config>
+	<modules>
+		<DerModPro_BasePricePro>
+			<active>true</active>
+			<codePool>community</codePool>
+			<depends>
+				<Mage_Catalog />
+				<DerModPro_BasePrice />
+			</depends>
+		</DerModPro_BasePricePro>
+	</modules>
+</config>

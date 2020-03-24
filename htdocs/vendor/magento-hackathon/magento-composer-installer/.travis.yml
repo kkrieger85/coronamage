@@ -1,0 +1,69 @@
+language: php
+os:
+  - linux
+php:
+  - 7.3
+  - 7.2
+  - 7.1
+  - 7.0
+  - 5.6
+
+env:
+  - TEST_SUITE=Unit
+  - TEST_SUITE=Fullstack
+
+matrix:
+  fast_finish: true
+  include:
+    - php: 5.6
+      env: TEST_SUITE=Static
+    - php: 7.3
+      os: windows
+    - php: 7.3
+      env: COMPOSER_VERSION=beta
+    - php: 7.3
+      env: COMPOSER_VERSION=dev
+  allow_failures:
+    - os: windows
+    - env: TEST_SUITE=Static
+    - env: COMPOSER_VERSION=beta
+    - env: COMPOSER_VERSION=dev
+
+cache:
+  directories:
+  - $HOME/.composer/cache
+
+install:
+  - php ./tests/prepare_composer.php
+  - chmod +x ./composer.phar
+  - ./composer.phar --version
+  - ./composer.phar install -n --prefer-source
+
+script:
+  - >
+    sh -c "if [ '$TEST_SUITE' = 'Unit' ] || [ '$TEST_SUITE' = 'Fullstack' ]; then
+    ./vendor/bin/phpunit --coverage-clover=coverage.clover --testsuite=$TEST_SUITE;
+    fi"
+  - >
+    sh -c "if [ '$TEST_SUITE' = 'Static' ]; then
+    ./vendor/bin/phpcs --standard=PSR2 ./src/;
+    ./vendor/bin/phpcs --standard=PSR2 ./tests/MagentoHackathon;
+    fi"
+after_script:
+  - wget https://scrutinizer-ci.com/ocular.phar
+  - php ocular.phar code-coverage:upload --format=php-clover coverage.clover
+
+notifications:
+  email:
+    recipients:
+      - flyingmana@googlemail.com
+    on_success: never
+    on_failure: always
+  webhooks:
+    urls:
+      - https://webhooks.gitter.im/e/c5ef1e9abfc452125de8
+      - https://webhooks.gitter.im/e/c15428595390b938ee38
+      - https://webhooks.gitter.im/e/5126f06d0f4f55230ee0
+    on_success: change  # options: [always|never|change] default: always
+    on_failure: always  # options: [always|never|change] default: always
+    on_start: false     # default: false

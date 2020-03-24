@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   AvS
+ * @package    AvS_ScopeHint
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author     Andreas von Studnitz <avs@avs-webentwicklung.de>
+ */
+ -->
+<config>
+
+	<modules>
+		<AvS_ScopeHint>
+			<version>0.7.0</version>
+		</AvS_ScopeHint>
+	</modules>
+
+    <global>
+        <helpers>
+            <scopehint>
+                <class>AvS_ScopeHint_Helper</class>
+            </scopehint>
+        </helpers>
+
+        <blocks>
+            <scopehint>
+                <class>AvS_ScopeHint_Block</class>
+            </scopehint>
+            <adminhtml>
+                <rewrite>
+                    <system_config_form_field>AvS_ScopeHint_Block_AdminhtmlSystemConfigFormField</system_config_form_field>
+                    <catalog_form_renderer_fieldset_element>AvS_ScopeHint_Block_AdminhtmlCatalogFormRendererFieldsetElement</catalog_form_renderer_fieldset_element>
+                </rewrite>
+            </adminhtml>
+        </blocks>
+    </global>
+
+    <adminhtml>
+        <translate>
+            <modules>
+                <AvS_ScopeHint>
+                    <files>
+                        <default>AvS_ScopeHint.csv</default>
+                    </files>
+                </AvS_ScopeHint>
+            </modules>
+        </translate>
+        <layout>
+            <updates>
+                <scopehint>
+                    <file>scopehint.xml</file>
+                </scopehint>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>
