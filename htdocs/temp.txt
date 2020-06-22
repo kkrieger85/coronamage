@@ -1,7 +1,0 @@
-mysql -uroot -e "CREATE DATABASE detection_develop;"
-mysql -uroot -e "CREATE USER 'detection_develop'@'%' IDENTIFIED BY 'detection_develop';"
-mysql -uroot -e "GRANT ALL PRIVILEGES ON detection_develop.* TO 'detection_develop'@'%';"
-
-mysql -uroot -e "CREATE DATABASE PLACEHOLDER;"
-mysql -uroot -e "CREATE USER 'PLACEHOLDER'@'%' IDENTIFIED BY 'PLACEHOLDER';"
-mysql -uroot -e "GRANT ALL PRIVILEGES ON PLACEHOLDER.* TO 'PLACEHOLDER'@'%';"

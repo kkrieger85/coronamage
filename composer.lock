@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "072062ab7caa0cb26cf58eff1c101efb",
+    "content-hash": "6bd81d91754b55c67961c64b2ca93a46",
     "packages": [
         {
             "name": "aoepeople/aoe_scheduler",
@@ -28,7 +28,6 @@
                 "fbrnc/aoe_scheduler": "*"
             },
             "type": "magento-module",
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-3.0"
             ],
@@ -46,7 +45,57 @@
             ],
             "description": "Magento Cron Scheduler",
             "homepage": "https://github.com/AOEpeople/Aoe_Scheduler",
+            "support": {
+                "source": "https://github.com/AOEpeople/Aoe_Scheduler/tree/v1.5.2",
+                "issues": "https://github.com/AOEpeople/Aoe_Scheduler/issues"
+            },
             "time": "2020-03-19T16:24:32+00:00"
+        },
+        {
+            "name": "aydin-hassan/magento-core-composer-installer",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AydinHassan/magento-core-composer-installer.git",
+                "reference": "3e986ad18ff57847f543a850bc48b62ece411a23"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AydinHassan/magento-core-composer-installer/zipball/3e986ad18ff57847f543a850bc48b62ece411a23",
+                "reference": "3e986ad18ff57847f543a850bc48b62ece411a23",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "~1.0",
+                "php": "^5.5 | ^7.0"
+            },
+            "require-dev": {
+                "composer/composer": "^1.3@dev",
+                "mikey179/vfsstream": "~1.4",
+                "phpunit/phpunit": "~4.3",
+                "squizlabs/php_codesniffer": "~1.5"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "\\AydinHassan\\MagentoCoreComposerInstaller\\CoreManager"
+            },
+            "autoload": {
+                "psr-4": {
+                    "AydinHassan\\MagentoCoreComposerInstaller\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aydin Hassan",
+                    "email": "aydin@hotmail.co.uk"
+                }
+            ],
+            "description": "A composer plugin for managing Magento Core",
+            "time": "2017-08-27T12:18:04+00:00"
         },
         {
             "name": "dermodpro/basepricepro",
@@ -459,16 +508,16 @@
         },
         {
             "name": "openmage/magento-lts",
-            "version": "1.9.4.x-dev",
+            "version": "v19.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OpenMage/magento-lts.git",
-                "reference": "9b4207f09f755671b83b894c41e0975a0bf3cae4"
+                "reference": "ef443a743914fc493ac651865657c3873ef63790"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OpenMage/magento-lts/zipball/9b4207f09f755671b83b894c41e0975a0bf3cae4",
-                "reference": "9b4207f09f755671b83b894c41e0975a0bf3cae4",
+                "url": "https://api.github.com/repos/OpenMage/magento-lts/zipball/ef443a743914fc493ac651865657c3873ef63790",
+                "reference": "ef443a743914fc493ac651865657c3873ef63790",
                 "shasum": ""
             },
             "require": {
@@ -498,7 +547,7 @@
                 }
             ],
             "description": " A fork of Magento-1 that is accepting bug fixes (backward compatible, drop in replacement for official Magento)",
-            "time": "2020-06-15T15:49:20+00:00"
+            "time": "2020-05-10T09:52:38+00:00"
         },
         {
             "name": "psr/container",

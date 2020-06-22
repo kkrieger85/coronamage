@@ -19,4 +19,5 @@ return array(
     'JsonSchema\\' => array($vendorDir . '/justinrainbow/json-schema/src/JsonSchema'),
     'Eloquent\\Enumeration\\' => array($vendorDir . '/eloquent/enumeration/src'),
     'Eloquent\\Composer\\Configuration\\' => array($vendorDir . '/eloquent/composer-config-reader/src'),
+    'AydinHassan\\MagentoCoreComposerInstaller\\' => array($vendorDir . '/aydin-hassan/magento-core-composer-installer/src'),
 );
