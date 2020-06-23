@@ -56,7 +56,6 @@
         "install.php",
         "php.ini.sample",
         "app/etc/local.xml.additional",
-        "app/etc/local.xml.template",
         "CODE_OF_CONDUCT.md"
       ]
     }
