@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "181e9d0789391a0f6f4ebe3b109b5dec",
+    "content-hash": "b629b75cbb80be145c3b10a79fe67ae4",
     "packages": [
         {
             "name": "aoepeople/aoe_scheduler",
@@ -96,153 +96,6 @@
             ],
             "description": "A composer plugin for managing Magento Core",
             "time": "2017-08-27T12:18:04+00:00"
-        },
-        {
-            "name": "colinmollenhour/cache-backend-redis",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/colinmollenhour/Cm_Cache_Backend_Redis.git",
-                "reference": "1132d905f08e33f24d1d80b775d2c7720b00c239"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/colinmollenhour/Cm_Cache_Backend_Redis/zipball/1132d905f08e33f24d1d80b775d2c7720b00c239",
-                "reference": "1132d905f08e33f24d1d80b775d2c7720b00c239",
-                "shasum": ""
-            },
-            "require": {
-                "colinmollenhour/credis": "*"
-            },
-            "type": "magento-module",
-            "autoload": {
-                "classmap": [
-                    "Cm/Cache/Backend/Redis.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Colin Mollenhour"
-                }
-            ],
-            "description": "Zend_Cache backend using Redis with full support for tags.",
-            "homepage": "https://github.com/colinmollenhour/Cm_Cache_Backend_Redis",
-            "time": "2020-06-04T12:37:26+00:00"
-        },
-        {
-            "name": "colinmollenhour/credis",
-            "version": "1.11.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/colinmollenhour/credis.git",
-                "reference": "b8b2bd6b87d2d4df67065f3510efb80d5f9c4e53"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/colinmollenhour/credis/zipball/b8b2bd6b87d2d4df67065f3510efb80d5f9c4e53",
-                "reference": "b8b2bd6b87d2d4df67065f3510efb80d5f9c4e53",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "Client.php",
-                    "Cluster.php",
-                    "Sentinel.php",
-                    "Module.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Colin Mollenhour",
-                    "email": "colin@mollenhour.com"
-                }
-            ],
-            "description": "Credis is a lightweight interface to the Redis key-value store which wraps the phpredis library when available for better performance.",
-            "homepage": "https://github.com/colinmollenhour/credis",
-            "time": "2020-06-15T19:25:47+00:00"
-        },
-        {
-            "name": "colinmollenhour/magento-redis-session",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/colinmollenhour/Cm_RedisSession.git",
-                "reference": "471e9afec4eb11f29df0ccc0f8806033185269d9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/colinmollenhour/Cm_RedisSession/zipball/471e9afec4eb11f29df0ccc0f8806033185269d9",
-                "reference": "471e9afec4eb11f29df0ccc0f8806033185269d9",
-                "shasum": ""
-            },
-            "require": {
-                "colinmollenhour/php-redis-session-abstract": "~1.4.0"
-            },
-            "suggest": {
-                "magento-hackathon/magento-composer-installer": "Makes it possible to manage this package as a dependency"
-            },
-            "type": "magento-module",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Colin Mollenhour"
-                }
-            ],
-            "description": "A Redis-based session handler for Magento with optimistic locking.",
-            "homepage": "https://github.com/colinmollenhour/Cm_RedisSession",
-            "time": "2019-07-01T18:34:48+00:00"
-        },
-        {
-            "name": "colinmollenhour/php-redis-session-abstract",
-            "version": "v1.4.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/colinmollenhour/php-redis-session-abstract.git",
-                "reference": "669521218794f125c7b668252f4f576eda65e1e4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/colinmollenhour/php-redis-session-abstract/zipball/669521218794f125c7b668252f4f576eda65e1e4",
-                "reference": "669521218794f125c7b668252f4f576eda65e1e4",
-                "shasum": ""
-            },
-            "require": {
-                "colinmollenhour/credis": "~1.6",
-                "php": "^5.5 || ^7.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Cm\\RedisSession\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Colin Mollenhour"
-                }
-            ],
-            "description": "A Redis-based session handler with optimistic locking",
-            "homepage": "https://github.com/colinmollenhour/php-redis-session-abstract",
-            "time": "2020-01-08T17:41:01+00:00"
         },
         {
             "name": "dermodpro/basepricepro",
@@ -1353,9 +1206,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "kkrieger85/magento-module-security-txt": 20,
-        "dermodpro/basepricepro": 20,
-        "colinmollenhour/magento-redis-session": 20,
-        "colinmollenhour/cache-backend-redis": 20
+        "dermodpro/basepricepro": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
