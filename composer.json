@@ -17,15 +17,15 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "git@github.com:kkrieger85/magento-module-security-txt.git"
+      "url": "https://github.com/kkrieger85/magento-module-security-txt.git"
     },
     {
       "type": "vcs",
-      "url": "git@github.com:kkrieger85/magento-slack-1.git"
+      "url": "https://github.com/kkrieger85/magento-slack-1.git"
     },
     {
       "type": "vcs",
-      "url": "git@bitbucket.org:kkrieger85/dmp_basepricepro.git"
+      "url": "https://kkrieger85@bitbucket.org/kkrieger85/dmp_basepricepro.git"
     }
   ],
   "scripts": {
