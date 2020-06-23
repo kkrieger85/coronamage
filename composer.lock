@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6bd81d91754b55c67961c64b2ca93a46",
+    "content-hash": "7814efdd69992761470d9a8b1140a859",
     "packages": [
         {
             "name": "aoepeople/aoe_scheduler",
@@ -102,7 +102,7 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git@bitbucket.org:kkrieger85/dmp_basepricepro.git",
+                "url": "https://kkrieger85@bitbucket.org/kkrieger85/dmp_basepricepro.git",
                 "reference": "e5b195e77146369edb66f29b726527943db0f5bb"
             },
             "suggest": {
