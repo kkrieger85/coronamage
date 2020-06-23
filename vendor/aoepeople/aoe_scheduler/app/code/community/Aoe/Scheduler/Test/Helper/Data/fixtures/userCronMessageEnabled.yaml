@@ -1,3 +1,0 @@
-# When a user has enabled the incorrect user running cron message
-config:
-    default/system/cron/showCronUserMessage: 1

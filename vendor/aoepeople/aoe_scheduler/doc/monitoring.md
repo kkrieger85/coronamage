@@ -1,5 +1,0 @@
-## Monitoring
-
-CLI/Webservice
-
-lastRun

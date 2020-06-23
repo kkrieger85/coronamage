@@ -1,3 +1,0 @@
-# The user that should run the cron is configured
-config:
-    default/system/cron/cronUser: aoe-web

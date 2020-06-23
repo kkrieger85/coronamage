@@ -1,3 +1,0 @@
-- last seen
-- pid...
-- kill job
