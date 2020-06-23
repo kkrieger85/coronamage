@@ -12,7 +12,9 @@
     "mhauri/mhauri-slack": "^0.5.0",
     "meanbee/footerjs": "^0.1.3",
     "dermodpro/basepricepro": "dev-master",
-    "aoepeople/aoe_scheduler": "^1.5"
+    "aoepeople/aoe_scheduler": "^1.5",
+    "colinmollenhour/magento-redis-session": "dev-master",
+    "colinmollenhour/cache-backend-redis": "dev-master"
   },
   "repositories": [
     {
