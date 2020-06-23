@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.de/src#" full="FireGento_MageSetup_Model_Setup" namespace="" name="FireGento_MageSetup_Model_Setup" abstract="false" final="false" start="34" end="241">
+  <file path="/Users/rouven/Sites/firegento/.modman/firegento-magesetup/src/app/code/community/FireGento/MageSetup/Model" file="Setup.php" realpath="/Users/rouven/Sites/firegento/.modman/firegento-magesetup/src/app/code/community/FireGento/MageSetup/Model/Setup.php" size="8633" time="2013-10-12T12:57:24+02:00" unixtime="1381575444" sha1="5c5f6a0cdbd2b8f7e057013730f28e0ef5dbb2eb"/>
+  <docblock>
+    <description compact="Setup class"/>
+    <category value="FireGento"/>
+    <package value="FireGento_MageSetup"/>
+    <author value="FireGento Team &lt;team@firegento.com&gt;"/>
+    <copyright value="2013 FireGento Team (http://www.firegento.com)"/>
+    <license name="http://opensource.org/licenses/gpl-3.0 GNU General Public License, version 3 (GPLv3)"/>
+    <version value="$Id:$"/>
+    <since value="1.2.0"/>
+  </docblock>
+  <extends full="Mage_Core_Model_Abstract" namespace="" name="Mage_Core_Model_Abstract"/>
+  <method name="setup" start="44" end="137" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Setup MageSetup as if a user sends the adminhtml form See method _getDefaultParams for possible params"/>
+      <param description="Setup params" type="array" variable="$params"/>
+      <param description="Flag if admin notifications should be added" type="object" variable="$notify">
+        <type full="bool" namespace="" name="bool"/>
+      </param>
+      <return description="Setup Model" type="object">
+        <type full="FireGento_MageSetup_Model_Setup" namespace="" name="FireGento_MageSetup_Model_Setup"/>
+      </return>
+    </docblock>
+    <parameter name="params" byreference="false" type="array"/>
+    <parameter name="notify" byreference="false" type="{unknown}" default="false"/>
+  </method>
+  <method name="_getDefaultParams" start="144" end="171" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Get default parameters like they are in the backend form"/>
+      <return description="Default setup params" type="array"/>
+    </docblock>
+  </method>
+  <method name="_updateProductTaxClasses" start="178" end="188" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Update the old product tax classes to the new tax class ids"/>
+      <param description="Setup params" type="array" variable="$params"/>
+    </docblock>
+    <parameter name="params" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="_updateCustomerTaxClasses" start="195" end="203" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Update the old product tax classes to the new tax class ids"/>
+      <param description="Setup params" type="array" variable="$params"/>
+    </docblock>
+    <parameter name="params" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="_markIndicesOutdated" start="208" end="220" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Mark relevant indices as outdated after changing tax rates"/>
+    </docblock>
+  </method>
+  <method name="_getHelper" start="227" end="230" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Retrieve the helper class"/>
+      <return description="Helper Class" type="object">
+        <type full="FireGento_MageSetup_Helper_Data" namespace="" name="FireGento_MageSetup_Helper_Data"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="_getAdminhtmlSession" start="237" end="240" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Retrieve the adminhtml session for setup notifications"/>
+      <return description="Admin Session" type="object">
+        <type full="Mage_Adminhtml_Model_Session" namespace="" name="Mage_Adminhtml_Model_Session"/>
+      </return>
+    </docblock>
+  </method>
+</class>

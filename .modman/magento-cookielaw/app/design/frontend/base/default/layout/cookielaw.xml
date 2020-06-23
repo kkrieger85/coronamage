@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright 2016 The Valdecode Cookie Law Compliance Authors. All rights reserved.
+ * Use of this source code is governed by a MIT-style
+ * license that can be found in the LICENSE.txt file.
+ */
+-->
+<layout version="0.1.0">
+    <default>
+        <reference name="head">
+            <action method="addCss">
+                <stylesheet>valdecode/cookielaw/css/cookielaw.css</stylesheet>
+            </action>
+        </reference>
+        <reference name="after_body_start">
+            <block name="cookielaw.after_body_start" type="core/template" before="-"
+                   template="cookielaw/after_body_start.phtml">
+                <action method="setCacheLifetime">
+                    <lifetime>3600</lifetime>
+                </action>
+                <block name="cookielaw.after_body_start.widget" type="core/template" before="-"
+                       template="cookielaw/widget.phtml"/>
+            </block>
+        </reference>
+        <reference name="before_body_end">
+            <block name="cookielaw.before_body_end" type="core/template" after="-"
+                   template="cookielaw/before_body_end.phtml">
+                <action method="setCacheLifetime">
+                    <lifetime>3600</lifetime>
+                </action>
+                <block name="cookielaw.before_body_end.widget" type="core/template" before="-"
+                       template="cookielaw/widget.phtml"/>
+            </block>
+        </reference>
+    </default>
+</layout>

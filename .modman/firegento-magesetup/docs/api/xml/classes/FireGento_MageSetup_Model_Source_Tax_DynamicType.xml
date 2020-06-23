@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.de/src#" full="FireGento_MageSetup_Model_Source_Tax_DynamicType" namespace="" name="FireGento_MageSetup_Model_Source_Tax_DynamicType" abstract="false" final="false" start="34" end="59">
+  <file path="/Users/rouven/Sites/firegento/.modman/firegento-magesetup/src/app/code/community/FireGento/MageSetup/Model/Source/Tax" file="DynamicType.php" realpath="/Users/rouven/Sites/firegento/.modman/firegento-magesetup/src/app/code/community/FireGento/MageSetup/Model/Source/Tax/DynamicType.php" size="2081" time="2013-10-12T12:57:24+02:00" unixtime="1381575444" sha1="62a86f0d976635ed8d105f80acac8a462ec80035"/>
+  <docblock>
+    <description compact="CMS Source model for configuration dropdown of CMS pages"/>
+    <category value="FireGento"/>
+    <package value="FireGento_MageSetup"/>
+    <author value="FireGento Team &lt;team@firegento.com&gt;"/>
+    <copyright value="2013 FireGento Team (http://www.firegento.com)"/>
+    <license name="http://opensource.org/licenses/gpl-3.0 GNU General Public License, version 3 (GPLv3)"/>
+    <version value="$Id:$"/>
+    <since value="1.2.0"/>
+  </docblock>
+  <method name="toOptionArray" start="41" end="58" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Options getter"/>
+      <return description="Dynamic types as option array" type="array"/>
+    </docblock>
+  </method>
+</class>

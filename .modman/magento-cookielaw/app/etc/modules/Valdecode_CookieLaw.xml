@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright 2016 The Valdecode Cookie Law Compliance Authors. All rights reserved.
+ * Use of this source code is governed by a MIT-style
+ * license that can be found in the LICENSE.txt file.
+ */
+-->
+<config>
+	<modules>
+		<Valdecode_CookieLaw>
+			<active>true</active>
+			<codePool>community</codePool>
+		</Valdecode_CookieLaw>
+	</modules>
+</config>

@@ -1,0 +1,13 @@
+<?php
+/**
+ * Copyright 2016 The Valdecode Cookie Law Compliance Authors. All rights reserved.
+ * Use of this source code is governed by a MIT-style
+ * license that can be found in the LICENSE.txt file.
+ */
+?>
+<?php $_helper = Mage::helper('cookielaw'); ?>
+<?php if ($_helper->isActive()): ?>
+    <?php if ($_helper->getType() == 'v-bar' && $_helper->getBarPosition() == 'v-top'): ?>
+        <?php echo $this->getChildHtml('cookielaw.after_body_start.widget'); ?>
+    <?php endif; ?>
+<?php endif; ?>

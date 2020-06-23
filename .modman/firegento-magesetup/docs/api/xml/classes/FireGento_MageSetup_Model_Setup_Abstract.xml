@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.de/src#" full="FireGento_MageSetup_Model_Setup_Abstract" namespace="" name="FireGento_MageSetup_Model_Setup_Abstract" abstract="false" final="false" start="34" end="163">
+  <file path="/Users/rouven/Sites/firegento/.modman/firegento-magesetup/src/app/code/community/FireGento/MageSetup/Model/Setup" file="Abstract.php" realpath="/Users/rouven/Sites/firegento/.modman/firegento-magesetup/src/app/code/community/FireGento/MageSetup/Model/Setup/Abstract.php" size="4542" time="2013-10-12T16:12:31+02:00" unixtime="1381587151" sha1="19f93ceb12f2c29b78a619136ee2fa13073c6417"/>
+  <docblock>
+    <description compact="Setup class"/>
+    <category value="FireGento"/>
+    <package value="FireGento_MageSetup"/>
+    <author value="FireGento Team &lt;team@firegento.com&gt;"/>
+    <copyright value="2013 FireGento Team (http://www.firegento.com)"/>
+    <license name="http://opensource.org/licenses/gpl-3.0 GNU General Public License, version 3 (GPLv3)"/>
+    <version value="$Id:$"/>
+    <since value="0.2.0"/>
+  </docblock>
+  <extends full="Mage_Core_Model_Abstract" namespace="" name="Mage_Core_Model_Abstract"/>
+  <member name="_setup" type="{unknown}" visibility="protected">
+    <docblock>
+      <description compact=""/>
+      <var type="object">
+        <type full="Mage_Eav_Model_Entity_Setup" namespace="" name="Mage_Eav_Model_Entity_Setup"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="_connection" type="{unknown}" visibility="protected">
+    <docblock>
+      <description compact=""/>
+      <var type="object">
+        <type full="Varien_Db_Adapter_Interface" namespace="" name="Varien_Db_Adapter_Interface"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="49" end="53" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Setup setup class and connection"/>
+    </docblock>
+  </constructor>
+  <method name="getConfigData" start="60" end="63" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get config.xml data"/>
+      <return description="Config data" type="object">
+        <type full="Varien_Simplexml_Element" namespace="" name="Varien_Simplexml_Element"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setConfigData" start="72" end="80" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Saves a system config value for the given config path and the given store id"/>
+      <param description="Config Path" type="string" variable="$configPath"/>
+      <param description="Value" type="string" variable="$value"/>
+      <param description="Store ID" type="object" variable="$storeId">
+        <type full="int|null" namespace="" name="int|null"/>
+      </param>
+    </docblock>
+    <parameter name="configPath" byreference="false" type="{unknown}"/>
+    <parameter name="value" byreference="false" type="{unknown}"/>
+    <parameter name="storeId" byreference="false" type="{unknown}" default="null"/>
+  </method>
+  <method name="_getConfigNode" start="89" end="97" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Get config.xml data"/>
+      <param description="xml node" type="string" variable="$node"/>
+      <param description="if set, child node of the first node" type="object" variable="$childNode">
+        <type full="string|null" namespace="" name="string|null"/>
+      </param>
+      <return description="Config Node" type="array"/>
+    </docblock>
+    <parameter name="node" byreference="false" type="{unknown}"/>
+    <parameter name="childNode" byreference="false" type="{unknown}" default="null"/>
+  </method>
+  <method name="getTemplateContent" start="105" end="108" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get template content"/>
+      <param description="Template file name" type="string" variable="$filename"/>
+      <return description="Template content" type="string"/>
+    </docblock>
+    <parameter name="filename" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="_loadExistingModel" start="118" end="129" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Load a model by attribute code"/>
+      <param description="Collection" type="object" variable="$model">
+        <type full="Mage_Core_Model_Abstract" namespace="" name="Mage_Core_Model_Abstract"/>
+      </param>
+      <param description="Attribute code" type="string" variable="$attributeCode"/>
+      <param description="Value" type="string" variable="$value"/>
+      <return type="object">
+        <type full="Mage_Core_Model_Abstract" namespace="" name="Mage_Core_Model_Abstract"/>
+      </return>
+    </docblock>
+    <parameter name="model" byreference="false" type="{unknown}"/>
+    <parameter name="attributeCode" byreference="false" type="{unknown}"/>
+    <parameter name="value" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="_getConnection" start="136" end="139" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Retrieve the database connection"/>
+      <return description="Database connection" type="object">
+        <type full="Varien_Db_Adapter_Interface" namespace="" name="Varien_Db_Adapter_Interface"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="_getSetup" start="146" end="149" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Retrieve the Magento setup model class"/>
+      <return description="Setup Model" type="object">
+        <type full="Mage_Eav_Model_Entity_Setup" namespace="" name="Mage_Eav_Model_Entity_Setup"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="getCountryId" start="156" end="162" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get setup country ID"/>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <extender full="FireGento_MageSetup_Model_Setup_Agreements" namespace="" name="FireGento_MageSetup_Model_Setup_Agreements"/>
+  <extender full="FireGento_MageSetup_Model_Setup_Cms" namespace="" name="FireGento_MageSetup_Model_Setup_Cms"/>
+  <extender full="FireGento_MageSetup_Model_Setup_Email" namespace="" name="FireGento_MageSetup_Model_Setup_Email"/>
+  <extender full="FireGento_MageSetup_Model_Setup_Systemconfig" namespace="" name="FireGento_MageSetup_Model_Setup_Systemconfig"/>
+  <extender full="FireGento_MageSetup_Model_Setup_Tax" namespace="" name="FireGento_MageSetup_Model_Setup_Tax"/>
+</class>

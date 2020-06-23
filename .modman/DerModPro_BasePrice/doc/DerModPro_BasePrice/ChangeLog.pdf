@@ -1,0 +1,430 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+% 'BasicFonts': class PDFDictionary 
+1 0 obj
+% The standard fonts dictionary
+<< /F1 2 0 R
+ /F2 3 0 R >>
+endobj
+% 'F1': class PDFType1Font 
+2 0 obj
+% Font Helvetica
+<< /BaseFont /Helvetica
+ /Encoding /WinAnsiEncoding
+ /Name /F1
+ /Subtype /Type1
+ /Type /Font >>
+endobj
+% 'F2': class PDFType1Font 
+3 0 obj
+% Font Helvetica-Bold
+<< /BaseFont /Helvetica-Bold
+ /Encoding /WinAnsiEncoding
+ /Name /F2
+ /Subtype /Type1
+ /Type /Font >>
+endobj
+% 'Page1': class PDFPage 
+4 0 obj
+% Page dictionary
+<< /Contents 8 0 R
+ /MediaBox [ 0
+ 0
+ 595.2756
+ 841.8898 ]
+ /Parent 7 0 R
+ /Resources << /Font 1 0 R
+ /ProcSet [ /PDF
+ /Text
+ /ImageB
+ /ImageC
+ /ImageI ] >>
+ /Rotate 0
+ /Trans <<  >>
+ /Type /Page >>
+endobj
+% 'R5': class PDFCatalog 
+5 0 obj
+% Document Root
+<< /Outlines 9 0 R
+ /PageLabels 10 0 R
+ /PageMode /UseNone
+ /Pages 7 0 R
+ /Type /Catalog >>
+endobj
+% 'R6': class PDFInfo 
+6 0 obj
+<< /Author ()
+ /CreationDate (D:20130410083730-01'00')
+ /Creator (\(unspecified\))
+ /Keywords ()
+ /Producer (ReportLab PDF Library - www.reportlab.com)
+ /Subject (\(unspecified\))
+ /Title (Grundpreis Modul \(Basis\)) >>
+endobj
+% 'R7': class PDFPages 
+7 0 obj
+% page tree
+<< /Count 1
+ /Kids [ 4 0 R ]
+ /Type /Pages >>
+endobj
+% 'R8': class PDFStream 
+8 0 obj
+% page stream
+<< /Length 4781 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 769.3701 cm
+q
+0 .533333 .603922 rg
+BT 1 0 0 1 0 4 Tm /F2 20 Tf 24 TL 112.7049 0 Td (Grundpreis Modul \(Basis\)) Tj T* -112.7049 0 Td ET
+Q
+Q
+q
+1 0 0 1 62.69291 739.3701 cm
+q
+0 .533333 .603922 rg
+BT 1 0 0 1 0 3 Tm /F2 15 Tf 18 TL 193.6949 0 Td (ChangeLog) Tj T* -193.6949 0 Td ET
+Q
+Q
+q
+1 0 0 1 62.69291 723.3701 cm
+Q
+q
+1 0 0 1 62.69291 561.3701 cm
+1 1 1 rg
+n 0 162 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 144 469.8898 -36 re f*
+1 1 1 rg
+n 0 108 469.8898 -36 re f*
+.878431 .878431 .878431 rg
+n 0 72 469.8898 -54 re f*
+1 1 1 rg
+n 0 18 469.8898 -18 re f*
+.960784 .960784 .862745 rg
+n 0 162 469.8898 -18 re f*
+0 .533333 .603922 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 147 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 46.73622 12 re f*
+Q
+q
+0 .533333 .603922 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 2.52811 0 Td (Revision) Tj T* -2.52811 0 Td ET
+Q
+Q
+q
+1 0 0 1 64.73622 147 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 46.73622 12 re f*
+Q
+q
+0 .533333 .603922 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 7.81311 0 Td (Datum) Tj T* -7.81311 0 Td ET
+Q
+Q
+q
+1 0 0 1 123.4724 147 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 340.4173 12 re f*
+Q
+q
+0 .533333 .603922 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 136.8687 0 Td (Beschreibung) Tj T* -136.8687 0 Td ET
+Q
+Q
+0 0 0 rg
+q
+1 0 0 1 6 129 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (13.04.09) Tj T* ET
+Q
+Q
+q
+1 0 0 1 64.73622 129 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (09.04.2013) Tj T* ET
+Q
+Q
+q
+1 0 0 1 123.4724 129 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Bugfixes:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 123.4724 123 cm
+Q
+q
+1 0 0 1 123.4724 123 cm
+Q
+q
+1 0 0 1 123.4724 111 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Fixed short notations for units.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 123.4724 111 cm
+Q
+q
+1 0 0 1 6 93 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (13.02.07) Tj T* ET
+Q
+Q
+q
+1 0 0 1 64.73622 93 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (07.02.2013) Tj T* ET
+Q
+Q
+q
+1 0 0 1 123.4724 93 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Bugfixes:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 123.4724 87 cm
+Q
+q
+1 0 0 1 123.4724 87 cm
+Q
+q
+1 0 0 1 123.4724 75 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Fixed wrong package path for en/Us locale) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 123.4724 75 cm
+Q
+q
+1 0 0 1 6 57 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (13.01.25) Tj T* ET
+Q
+Q
+q
+1 0 0 1 64.73622 57 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (25.01.2013) Tj T* ET
+Q
+Q
+q
+1 0 0 1 123.4724 57 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Bugfixes:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 123.4724 51 cm
+Q
+q
+1 0 0 1 123.4724 51 cm
+Q
+q
+1 0 0 1 123.4724 39 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (\334bersetzungskonflikt mit Mage_Customer) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 123.4724 33 cm
+Q
+q
+1 0 0 1 123.4724 21 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Bug bei der Preisaktualisierung mit Custom Options) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 123.4724 21 cm
+Q
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (0.2.2) Tj T* ET
+Q
+Q
+q
+1 0 0 1 64.73622 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (04.05.2012) Tj T* ET
+Q
+Q
+q
+1 0 0 1 123.4724 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Initiale Version) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 144 m 469.8898 144 l S
+n 0 108 m 469.8898 108 l S
+n 0 72 m 469.8898 72 l S
+n 0 18 m 469.8898 18 l S
+n 58.73622 0 m 58.73622 162 l S
+n 117.4724 0 m 117.4724 162 l S
+n 0 162 m 469.8898 162 l S
+n 0 0 m 469.8898 0 l S
+n 0 0 m 0 162 l S
+n 469.8898 0 m 469.8898 162 l S
+Q
+Q
+q
+1 0 0 1 62.69291 561.3701 cm
+Q
+q
+1 0 0 1 62.69291 561.3701 cm
+Q
+q
+1 0 0 1 56.69291 56.69291 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Stand: 10.04.2013) Tj T* ET
+Q
+Q
+q
+1 0 0 1 246.9449 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 215.0449 0 Td (1/1) Tj T* -215.0449 0 Td ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+% 'R9': class PDFOutlines 
+9 0 obj
+<< /Count 0
+ /Type /Outlines >>
+endobj
+% 'R10': class PDFPageLabels 
+10 0 obj
+% Document Root
+<< /Nums [ 0
+ 11 0 R ] >>
+endobj
+% 'R11': class PDFPageLabel 
+11 0 obj
+% None
+<< /S /D
+ /St 1 >>
+endobj
+xref
+0 12
+0000000000 65535 f
+0000000113 00000 n
+0000000221 00000 n
+0000000386 00000 n
+0000000559 00000 n
+0000000836 00000 n
+0000000991 00000 n
+0000001260 00000 n
+0000001365 00000 n
+0000006245 00000 n
+0000006327 00000 n
+0000006420 00000 n
+trailer
+<< /ID 
+ % ReportLab generated PDF document -- digest (http://www.reportlab.com) 
+ [(\\ \223<\244\221\320\263e\374bl\0026\222\336) (\\ \223<\244\221\320\263e\374bl\0026\222\336)] 
+
+ /Info 6 0 R
+ /Root 5 0 R
+ /Size 12 >>
+startxref
+6467
+%%EOF
