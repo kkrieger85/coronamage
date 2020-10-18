@@ -28,6 +28,7 @@
                 "fbrnc/aoe_scheduler": "*"
             },
             "type": "magento-module",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-3.0"
             ],
@@ -45,10 +46,6 @@
             ],
             "description": "Magento Cron Scheduler",
             "homepage": "https://github.com/AOEpeople/Aoe_Scheduler",
-            "support": {
-                "source": "https://github.com/AOEpeople/Aoe_Scheduler/tree/v1.5.2",
-                "issues": "https://github.com/AOEpeople/Aoe_Scheduler/issues"
-            },
             "time": "2020-03-19T16:24:32+00:00"
         },
         {
@@ -329,6 +326,12 @@
                 "source": "https://github.com/kkrieger85/magento-module-security-txt/tree/master",
                 "issues": "https://github.com/kkrieger85/magento-module-security-txt/issues"
             },
+            "funding": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/kkrieger85"
+                }
+            ],
             "time": "2020-01-07T14:12:23+00:00"
         },
         {
@@ -344,12 +347,6 @@
                 "url": "https://api.github.com/repos/Cotya/magento-composer-installer/zipball/156de3183195e48de4a98c209a5876e226704e77",
                 "reference": "156de3183195e48de4a98c209a5876e226704e77",
                 "shasum": ""
-            },
-            "archive": {
-                "exclude": [
-                    "vendor",
-                    "/tests/FullStackTest/"
-                ]
             },
             "require": {
                 "composer-plugin-api": "^1.0",
@@ -383,11 +380,7 @@
                     "MagentoHackathon\\Composer": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-0": {
-                    "MagentoHackathon\\Composer\\Magento": "tests/"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "OSL-3.0"
             ],
@@ -424,10 +417,16 @@
                 "magento",
                 "openmage"
             ],
-            "support": {
-                "source": "https://github.com/Cotya/magento-composer-installer/tree/3.2.3",
-                "issues": "https://github.com/Cotya/magento-composer-installer/issues"
-            },
+            "funding": [
+                {
+                    "url": "https://www.amazon.de/hz/wishlist/ls/3ENQNOML0W64Y",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/Flyingmana",
+                    "type": "patreon"
+                }
+            ],
             "time": "2020-06-15T19:01:31+00:00"
         },
         {
@@ -508,16 +507,16 @@
         },
         {
             "name": "openmage/magento-lts",
-            "version": "v19.4.3",
+            "version": "v19.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OpenMage/magento-lts.git",
-                "reference": "ef443a743914fc493ac651865657c3873ef63790"
+                "reference": "f77f7ee16d7613b956775c014cf9d6c729e44578"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OpenMage/magento-lts/zipball/ef443a743914fc493ac651865657c3873ef63790",
-                "reference": "ef443a743914fc493ac651865657c3873ef63790",
+                "url": "https://api.github.com/repos/OpenMage/magento-lts/zipball/f77f7ee16d7613b956775c014cf9d6c729e44578",
+                "reference": "f77f7ee16d7613b956775c014cf9d6c729e44578",
                 "shasum": ""
             },
             "require": {
@@ -532,7 +531,7 @@
             "authors": [
                 {
                     "name": "Lee Saferite",
-                    "email": "lee.saferite@aoe.com",
+                    "email": "lee.saferite@openmage.org",
                     "role": "Maintainer"
                 },
                 {
@@ -544,10 +543,19 @@
                     "name": "David Robinson",
                     "email": "david.robinson@aoe.com",
                     "role": "Maintainer"
+                },
+                {
+                    "name": "Tymoteusz Motylewski",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Sven Reichel",
+                    "email": "github-sr@hotmail.com",
+                    "role": "Maintainer"
                 }
             ],
             "description": " A fork of Magento-1 that is accepting bug fixes (backward compatible, drop in replacement for official Magento)",
-            "time": "2020-05-10T09:52:38+00:00"
+            "time": "2020-08-18T18:04:05+00:00"
         },
         {
             "name": "psr/container",
@@ -604,12 +612,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "27737091e88420e97cb7efdaf505820c709c3bbc"
+                "reference": "5bc9d8e93f5a3746fdd9d774ad214e502cbb0f8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/27737091e88420e97cb7efdaf505820c709c3bbc",
-                "reference": "27737091e88420e97cb7efdaf505820c709c3bbc",
+                "url": "https://api.github.com/repos/symfony/console/zipball/5bc9d8e93f5a3746fdd9d774ad214e502cbb0f8a",
+                "reference": "5bc9d8e93f5a3746fdd9d774ad214e502cbb0f8a",
                 "shasum": ""
             },
             "require": {
@@ -681,7 +689,21 @@
                 "console",
                 "terminal"
             ],
-            "time": "2020-06-16T21:43:05+00:00"
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-08-18T05:52:09+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -1073,12 +1095,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/service-contracts.git",
-                "reference": "fa63c880563872528523a3fff9c18291194b46ac"
+                "reference": "58c7475e5457c5492c26cc740cc0ad7464be9442"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/fa63c880563872528523a3fff9c18291194b46ac",
-                "reference": "fa63c880563872528523a3fff9c18291194b46ac",
+                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/58c7475e5457c5492c26cc740cc0ad7464be9442",
+                "reference": "58c7475e5457c5492c26cc740cc0ad7464be9442",
                 "shasum": ""
             },
             "require": {
@@ -1127,7 +1149,21 @@
                 "interoperability",
                 "standards"
             ],
-            "time": "2020-06-18T19:55:03+00:00"
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-07-06T13:23:11+00:00"
         },
         {
             "name": "symfony/string",
@@ -1135,12 +1171,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "c70102b5e84f20821de9f31b54e5b7482888aace"
+                "reference": "68e150ace76a1f7476970d3816c97be94366cb03"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/c70102b5e84f20821de9f31b54e5b7482888aace",
-                "reference": "c70102b5e84f20821de9f31b54e5b7482888aace",
+                "url": "https://api.github.com/repos/symfony/string/zipball/68e150ace76a1f7476970d3816c97be94366cb03",
+                "reference": "68e150ace76a1f7476970d3816c97be94366cb03",
                 "shasum": ""
             },
             "require": {
@@ -1198,7 +1234,21 @@
                 "utf-8",
                 "utf8"
             ],
-            "time": "2020-06-11T21:21:11+00:00"
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-08-17T08:48:15+00:00"
         }
     ],
     "packages-dev": [],
@@ -1213,5 +1263,6 @@
     "platform": {
         "php": ">=7.2"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
