@@ -507,16 +507,16 @@
         },
         {
             "name": "openmage/magento-lts",
-            "version": "v19.4.6",
+            "version": "v19.4.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OpenMage/magento-lts.git",
-                "reference": "f77f7ee16d7613b956775c014cf9d6c729e44578"
+                "reference": "cd4c896866f341c4105a4ce61908e7eecdaeb425"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OpenMage/magento-lts/zipball/f77f7ee16d7613b956775c014cf9d6c729e44578",
-                "reference": "f77f7ee16d7613b956775c014cf9d6c729e44578",
+                "url": "https://api.github.com/repos/OpenMage/magento-lts/zipball/cd4c896866f341c4105a4ce61908e7eecdaeb425",
+                "reference": "cd4c896866f341c4105a4ce61908e7eecdaeb425",
                 "shasum": ""
             },
             "require": {
@@ -555,7 +555,7 @@
                 }
             ],
             "description": " A fork of Magento-1 that is accepting bug fixes (backward compatible, drop in replacement for official Magento)",
-            "time": "2020-08-18T18:04:05+00:00"
+            "time": "2020-10-20T21:52:58+00:00"
         },
         {
             "name": "psr/container",
