@@ -6,8 +6,8 @@
   "require": {
     "php": ">=7.2",
     "aydin-hassan/magento-core-composer-installer": "*",
-    "magento-hackathon/magento-composer-installer": "^3.1",
-    "openmage/magento-lts": "19.4.*",
+    "magento-hackathon/magento-composer-installer": "*",
+    "openmage/magento-lts": "^v20.0.7",
     "kkrieger85/magento-module-security-txt": "dev-master",
     "mhauri/mhauri-slack": "^0.5.0",
     "meanbee/footerjs": "^0.1.3",
@@ -49,6 +49,8 @@
         "downloader",
         ".gitignore",
         ".htaccess.sample",
+        ".phpstorm.meta.php",
+        ".all-contributorsrc",
         ".travis.yml",
         "README.md",
         "RELEASE_NOTES.txt",
@@ -56,7 +58,9 @@
         "install.php",
         "php.ini.sample",
         "app/etc/local.xml.additional",
-        "CODE_OF_CONDUCT.md"
+        "CODE_OF_CONDUCT.md",
+        "LICENSE.txt",
+        "LICENSE_AFL.txt"
       ]
     }
   }

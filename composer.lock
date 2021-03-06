@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b629b75cbb80be145c3b10a79fe67ae4",
+    "content-hash": "3a93672f464a3137c369423d76bdb9ca",
     "packages": [
         {
             "name": "aoepeople/aoe_scheduler",
@@ -46,32 +46,37 @@
             ],
             "description": "Magento Cron Scheduler",
             "homepage": "https://github.com/AOEpeople/Aoe_Scheduler",
+            "support": {
+                "issues": "https://github.com/AOEpeople/Aoe_Scheduler/issues",
+                "source": "https://github.com/AOEpeople/Aoe_Scheduler/tree/v1.5.2"
+            },
             "time": "2020-03-19T16:24:32+00:00"
         },
         {
             "name": "aydin-hassan/magento-core-composer-installer",
-            "version": "1.5.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AydinHassan/magento-core-composer-installer.git",
-                "reference": "3e986ad18ff57847f543a850bc48b62ece411a23"
+                "reference": "63707896927d5601808323a69f695f1b0110ed79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AydinHassan/magento-core-composer-installer/zipball/3e986ad18ff57847f543a850bc48b62ece411a23",
-                "reference": "3e986ad18ff57847f543a850bc48b62ece411a23",
+                "url": "https://api.github.com/repos/AydinHassan/magento-core-composer-installer/zipball/63707896927d5601808323a69f695f1b0110ed79",
+                "reference": "63707896927d5601808323a69f695f1b0110ed79",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "~1.0",
-                "php": "^5.5 | ^7.0"
+                "composer-plugin-api": "^2.0",
+                "php": "^7.0"
             },
             "require-dev": {
-                "composer/composer": "^1.3@dev",
+                "composer/composer": "^2.0",
                 "mikey179/vfsstream": "~1.4",
-                "phpunit/phpunit": "~4.3",
+                "phpunit/phpunit": "^6.0",
                 "squizlabs/php_codesniffer": "~1.5"
             },
+            "default-branch": true,
             "type": "composer-plugin",
             "extra": {
                 "class": "\\AydinHassan\\MagentoCoreComposerInstaller\\CoreManager"
@@ -92,7 +97,11 @@
                 }
             ],
             "description": "A composer plugin for managing Magento Core",
-            "time": "2017-08-27T12:18:04+00:00"
+            "support": {
+                "issues": "https://github.com/AydinHassan/magento-core-composer-installer/issues",
+                "source": "https://github.com/AydinHassan/magento-core-composer-installer/tree/master"
+            },
+            "time": "2020-11-06T14:36:24+00:00"
         },
         {
             "name": "dermodpro/basepricepro",
@@ -105,6 +114,7 @@
             "suggest": {
                 "magento-hackathon/magento-composer-installer": "*"
             },
+            "default-branch": true,
             "type": "magento-module",
             "license": [
                 "OSL-3.0"
@@ -117,57 +127,6 @@
             ],
             "description": "This extension enables base price display for products.",
             "time": "2016-07-27T08:09:31+00:00"
-        },
-        {
-            "name": "eloquent/composer-config-reader",
-            "version": "2.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/eloquent/composer-config-reader.git",
-                "reference": "ee83a1cad8f68508f05b30c376003045a7cdfcd8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/eloquent/composer-config-reader/zipball/ee83a1cad8f68508f05b30c376003045a7cdfcd8",
-                "reference": "ee83a1cad8f68508f05b30c376003045a7cdfcd8",
-                "shasum": ""
-            },
-            "require": {
-                "eloquent/enumeration": "^5",
-                "justinrainbow/json-schema": "^4",
-                "php": ">=5.3"
-            },
-            "require-dev": {
-                "eloquent/liberator": "^2",
-                "eloquent/phony": "0.14.4",
-                "phpunit/phpunit": "^4"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Eloquent\\Composer\\Configuration\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Erin Millard",
-                    "email": "ezzatron@gmail.com",
-                    "homepage": "http://ezzatron.com/"
-                }
-            ],
-            "description": "A light-weight component for reading Composer configuration files.",
-            "homepage": "https://github.com/eloquent/composer-config-reader",
-            "keywords": [
-                "composer",
-                "configuration",
-                "parser",
-                "reader"
-            ],
-            "time": "2017-11-02T01:07:08+00:00"
         },
         {
             "name": "eloquent/enumeration",
@@ -218,29 +177,88 @@
                 "set",
                 "type"
             ],
+            "support": {
+                "issues": "https://github.com/eloquent/enumeration/issues",
+                "source": "https://github.com/eloquent/enumeration/tree/master"
+            },
             "time": "2015-11-03T22:21:38+00:00"
         },
         {
-            "name": "justinrainbow/json-schema",
-            "version": "4.1.0",
+            "name": "flyingmana/composer-config-reader",
+            "version": "dev-main",
             "source": {
                 "type": "git",
-                "url": "https://github.com/justinrainbow/json-schema.git",
-                "reference": "d39c56a46b3ebe1f3696479966cd2b9f50aaa24f"
+                "url": "https://github.com/Flyingmana/composer-config-reader.git",
+                "reference": "47d398306f82b756d69628e13a366537f0f05973"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/d39c56a46b3ebe1f3696479966cd2b9f50aaa24f",
-                "reference": "d39c56a46b3ebe1f3696479966cd2b9f50aaa24f",
+                "url": "https://api.github.com/repos/Flyingmana/composer-config-reader/zipball/47d398306f82b756d69628e13a366537f0f05973",
+                "reference": "47d398306f82b756d69628e13a366537f0f05973",
+                "shasum": ""
+            },
+            "require": {
+                "eloquent/enumeration": "^5",
+                "justinrainbow/json-schema": "^5",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "eloquent/liberator": "^2",
+                "eloquent/phony": "0.14.4",
+                "phpunit/phpunit": "^4"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Eloquent\\Composer\\Configuration\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Erin Millard",
+                    "email": "ezzatron@gmail.com",
+                    "homepage": "http://ezzatron.com/"
+                }
+            ],
+            "description": "a fork of eloquent/composer-config-reader, A light-weight component for reading Composer configuration files.",
+            "homepage": "https://github.com/eloquent/composer-config-reader",
+            "keywords": [
+                "composer",
+                "configuration",
+                "parser",
+                "reader"
+            ],
+            "support": {
+                "source": "https://github.com/Flyingmana/composer-config-reader/tree/20.0.1"
+            },
+            "time": "2020-11-08T09:03:06+00:00"
+        },
+        {
+            "name": "justinrainbow/json-schema",
+            "version": "5.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/justinrainbow/json-schema.git",
+                "reference": "2ba9c8c862ecd5510ed16c6340aa9f6eadb4f31b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/2ba9c8c862ecd5510ed16c6340aa9f6eadb4f31b",
+                "reference": "2ba9c8c862ecd5510ed16c6340aa9f6eadb4f31b",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "require-dev": {
+                "friendsofphp/php-cs-fixer": "~2.2.20||~2.15.1",
                 "json-schema/json-schema-test-suite": "1.2.0",
-                "phpdocumentor/phpdocumentor": "~2",
-                "phpunit/phpunit": "^4.8.22"
+                "phpunit/phpunit": "^4.8.35"
             },
             "bin": [
                 "bin/validate-json"
@@ -248,7 +266,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.0.x-dev"
+                    "dev-master": "5.0.x-dev"
                 }
             },
             "autoload": {
@@ -284,7 +302,11 @@
                 "json",
                 "schema"
             ],
-            "time": "2016-12-22T16:43:46+00:00"
+            "support": {
+                "issues": "https://github.com/justinrainbow/json-schema/issues",
+                "source": "https://github.com/justinrainbow/json-schema/tree/5.2.10"
+            },
+            "time": "2020-05-27T16:41:55+00:00"
         },
         {
             "name": "kkrieger85/magento-module-security-txt",
@@ -292,18 +314,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kkrieger85/magento-module-security-txt.git",
-                "reference": "a95c59a3a690a9a4024f688642b3be3dce318ac1"
+                "reference": "4674275c180e11395b8995a1b5ef808839eacedd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kkrieger85/magento-module-security-txt/zipball/a95c59a3a690a9a4024f688642b3be3dce318ac1",
-                "reference": "a95c59a3a690a9a4024f688642b3be3dce318ac1",
+                "url": "https://api.github.com/repos/kkrieger85/magento-module-security-txt/zipball/4674275c180e11395b8995a1b5ef808839eacedd",
+                "reference": "4674275c180e11395b8995a1b5ef808839eacedd",
                 "shasum": ""
             },
             "require": {
                 "magento-hackathon/magento-composer-installer": "*",
                 "php": ">=7.1"
             },
+            "default-branch": true,
             "type": "magento-module",
             "extra": {
                 "magento-root-dir": "./",
@@ -332,31 +355,31 @@
                     "url": "https://github.com/kkrieger85"
                 }
             ],
-            "time": "2020-01-07T14:12:23+00:00"
+            "time": "2020-07-29T12:49:52+00:00"
         },
         {
             "name": "magento-hackathon/magento-composer-installer",
-            "version": "3.2.3",
+            "version": "4.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cotya/magento-composer-installer.git",
-                "reference": "156de3183195e48de4a98c209a5876e226704e77"
+                "reference": "d237a2d988de81fa693343a672871ea592bf14aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cotya/magento-composer-installer/zipball/156de3183195e48de4a98c209a5876e226704e77",
-                "reference": "156de3183195e48de4a98c209a5876e226704e77",
+                "url": "https://api.github.com/repos/Cotya/magento-composer-installer/zipball/d237a2d988de81fa693343a672871ea592bf14aa",
+                "reference": "d237a2d988de81fa693343a672871ea592bf14aa",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0",
-                "eloquent/composer-config-reader": "2.*",
+                "composer-plugin-api": "^2.0",
+                "flyingmana/composer-config-reader": "*",
                 "php": ">=5.5",
                 "symfony/console": "^2.5|^3.0|^4.0|^5.0"
             },
             "require-dev": {
-                "composer/composer": "1.*",
-                "cotya/composer-test-framework": "dev-master",
+                "composer/composer": "2.*",
+                "cotya/composer-test-framework": "~2.0",
                 "ext-json": "*",
                 "mikey179/vfsstream": "~1.4",
                 "phpunit/phpunit": "~4.3",
@@ -417,17 +440,21 @@
                 "magento",
                 "openmage"
             ],
+            "support": {
+                "issues": "https://github.com/Cotya/magento-composer-installer/issues",
+                "source": "https://github.com/Cotya/magento-composer-installer/tree/4.0.1"
+            },
             "funding": [
                 {
-                    "url": "https://www.amazon.de/hz/wishlist/ls/3ENQNOML0W64Y",
-                    "type": "custom"
+                    "url": "https://github.com/sponsors/Flyingmana",
+                    "type": "github"
                 },
                 {
                     "url": "https://www.patreon.com/Flyingmana",
                     "type": "patreon"
                 }
             ],
-            "time": "2020-06-15T19:01:31+00:00"
+            "time": "2020-11-09T19:06:01+00:00"
         },
         {
             "name": "meanbee/footerjs",
@@ -466,6 +493,10 @@
                 }
             ],
             "description": "Meanbee Footerjs module",
+            "support": {
+                "issues": "https://github.com/bobbyshaw/magento-footer-js/issues",
+                "source": "https://github.com/bobbyshaw/magento-footer-js/tree/0.1.3"
+            },
             "time": "2017-07-26T13:42:50+00:00"
         },
         {
@@ -507,26 +538,27 @@
         },
         {
             "name": "openmage/magento-lts",
-            "version": "v19.4.6",
+            "version": "20.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OpenMage/magento-lts.git",
-                "reference": "f77f7ee16d7613b956775c014cf9d6c729e44578"
+                "reference": "a4b82bfdfbdc4676060c54c27827e8f2ddf58e4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OpenMage/magento-lts/zipball/f77f7ee16d7613b956775c014cf9d6c729e44578",
-                "reference": "f77f7ee16d7613b956775c014cf9d6c729e44578",
+                "url": "https://api.github.com/repos/OpenMage/magento-lts/zipball/a4b82bfdfbdc4676060c54c27827e8f2ddf58e4d",
+                "reference": "a4b82bfdfbdc4676060c54c27827e8f2ddf58e4d",
                 "shasum": ""
             },
             "require": {
-                "magento-hackathon/magento-composer-installer": "^3.1 || ^2.1",
-                "php": ">=7.0 <7.5"
+                "magento-hackathon/magento-composer-installer": "^3.1 || ^2.1 || ^4.0",
+                "php": ">=7.0 <7.5 || >=8.0 <8.1"
             },
             "type": "magento-source",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "OSL-3.0"
+                "OSL-3.0",
+                "AFL-3.0"
             ],
             "authors": [
                 {
@@ -554,32 +586,31 @@
                     "role": "Maintainer"
                 }
             ],
-            "description": " A fork of Magento-1 that is accepting bug fixes (backward compatible, drop in replacement for official Magento)",
-            "time": "2020-08-18T18:04:05+00:00"
+            "description": "A fork of Magento-1 that is accepting bug fixes (backward compatible, drop in replacement for official Magento)",
+            "support": {
+                "issues": "https://github.com/OpenMage/magento-lts/issues",
+                "source": "https://github.com/OpenMage/magento-lts/tree/20.0"
+            },
+            "time": "2021-02-26T11:36:13+00:00"
         },
         {
             "name": "psr/container",
-            "version": "dev-master",
+            "version": "1.1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/container.git",
-                "reference": "fc1bc363ecf887921e3897c7b1dad3587ae154eb"
+                "reference": "8622567409010282b7aeebe4bb841fe98b58dcaf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/container/zipball/fc1bc363ecf887921e3897c7b1dad3587ae154eb",
-                "reference": "fc1bc363ecf887921e3897c7b1dad3587ae154eb",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/8622567409010282b7aeebe4bb841fe98b58dcaf",
+                "reference": "8622567409010282b7aeebe4bb841fe98b58dcaf",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "php": ">=7.2.0"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Psr\\Container\\": "src/"
@@ -592,7 +623,7 @@
             "authors": [
                 {
                     "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
+                    "homepage": "https://www.php-fig.org/"
                 }
             ],
             "description": "Common Container Interface (PHP FIG PSR-11)",
@@ -604,20 +635,24 @@
                 "container-interop",
                 "psr"
             ],
-            "time": "2019-10-04T14:07:35+00:00"
+            "support": {
+                "issues": "https://github.com/php-fig/container/issues",
+                "source": "https://github.com/php-fig/container/tree/1.1.x"
+            },
+            "time": "2021-03-05T17:36:06+00:00"
         },
         {
             "name": "symfony/console",
-            "version": "dev-master",
+            "version": "5.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "5bc9d8e93f5a3746fdd9d774ad214e502cbb0f8a"
+                "reference": "68d45307f77241bd56b36c7087d0d7b537160760"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/5bc9d8e93f5a3746fdd9d774ad214e502cbb0f8a",
-                "reference": "5bc9d8e93f5a3746fdd9d774ad214e502cbb0f8a",
+                "url": "https://api.github.com/repos/symfony/console/zipball/68d45307f77241bd56b36c7087d0d7b537160760",
+                "reference": "68d45307f77241bd56b36c7087d0d7b537160760",
                 "shasum": ""
             },
             "require": {
@@ -653,12 +688,8 @@
                 "symfony/lock": "",
                 "symfony/process": ""
             },
+            "default-branch": true,
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.2-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\Console\\": ""
@@ -681,7 +712,7 @@
                     "homepage": "https://symfony.com/contributors"
                 }
             ],
-            "description": "Symfony Console Component",
+            "description": "Eases the creation of beautiful and testable command line interfaces",
             "homepage": "https://symfony.com",
             "keywords": [
                 "cli",
@@ -689,6 +720,9 @@
                 "console",
                 "terminal"
             ],
+            "support": {
+                "source": "https://github.com/symfony/console/tree/5.x"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -703,32 +737,33 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-08-18T05:52:09+00:00"
+            "time": "2021-03-06T08:05:19+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "dev-master",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "2edd75b8b35d62fd3eeabba73b26b8f1f60ce13d"
+                "reference": "c6c942b1ac76c82448322025e084cadc56048b4e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/2edd75b8b35d62fd3eeabba73b26b8f1f60ce13d",
-                "reference": "2edd75b8b35d62fd3eeabba73b26b8f1f60ce13d",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/c6c942b1ac76c82448322025e084cadc56048b4e",
+                "reference": "c6c942b1ac76c82448322025e084cadc56048b4e",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": ">=7.1"
             },
             "suggest": {
                 "ext-ctype": "For best performance"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.17-dev"
+                    "dev-main": "1.22-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -765,32 +800,50 @@
                 "polyfill",
                 "portable"
             ],
-            "time": "2020-06-06T08:46:27+00:00"
+            "support": {
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.22.1"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-01-07T16:49:33+00:00"
         },
         {
             "name": "symfony/polyfill-intl-grapheme",
-            "version": "dev-master",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-grapheme.git",
-                "reference": "6e4dbcf5e81eba86e36731f94fe56b1726835846"
+                "reference": "5601e09b69f26c1828b13b6bb87cb07cddba3170"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-intl-grapheme/zipball/6e4dbcf5e81eba86e36731f94fe56b1726835846",
-                "reference": "6e4dbcf5e81eba86e36731f94fe56b1726835846",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-grapheme/zipball/5601e09b69f26c1828b13b6bb87cb07cddba3170",
+                "reference": "5601e09b69f26c1828b13b6bb87cb07cddba3170",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": ">=7.1"
             },
             "suggest": {
                 "ext-intl": "For best performance"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.17-dev"
+                    "dev-main": "1.22-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -829,32 +882,50 @@
                 "portable",
                 "shim"
             ],
-            "time": "2020-06-06T08:46:27+00:00"
+            "support": {
+                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.22.1"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-01-22T09:19:47+00:00"
         },
         {
             "name": "symfony/polyfill-intl-normalizer",
-            "version": "dev-master",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-normalizer.git",
-                "reference": "40309d1700e8f72447bb9e7b54af756eeea35620"
+                "reference": "43a0283138253ed1d48d352ab6d0bdb3f809f248"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-intl-normalizer/zipball/40309d1700e8f72447bb9e7b54af756eeea35620",
-                "reference": "40309d1700e8f72447bb9e7b54af756eeea35620",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-normalizer/zipball/43a0283138253ed1d48d352ab6d0bdb3f809f248",
+                "reference": "43a0283138253ed1d48d352ab6d0bdb3f809f248",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": ">=7.1"
             },
             "suggest": {
                 "ext-intl": "For best performance"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.17-dev"
+                    "dev-main": "1.22-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -896,32 +967,50 @@
                 "portable",
                 "shim"
             ],
-            "time": "2020-06-14T14:40:37+00:00"
+            "support": {
+                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.22.1"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-01-22T09:19:47+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "dev-master",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "7110338d81ce1cbc3e273136e4574663627037a7"
+                "reference": "5232de97ee3b75b0360528dae24e73db49566ab1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/7110338d81ce1cbc3e273136e4574663627037a7",
-                "reference": "7110338d81ce1cbc3e273136e4574663627037a7",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/5232de97ee3b75b0360528dae24e73db49566ab1",
+                "reference": "5232de97ee3b75b0360528dae24e73db49566ab1",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": ">=7.1"
             },
             "suggest": {
                 "ext-mbstring": "For best performance"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.17-dev"
+                    "dev-main": "1.22-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -959,29 +1048,47 @@
                 "portable",
                 "shim"
             ],
-            "time": "2020-06-06T08:46:27+00:00"
+            "support": {
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.22.1"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-01-22T09:19:47+00:00"
         },
         {
             "name": "symfony/polyfill-php73",
-            "version": "dev-master",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php73.git",
-                "reference": "fa0837fe02d617d31fbb25f990655861bb27bd1a"
+                "reference": "a678b42e92f86eca04b7fa4c0f6f19d097fb69e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php73/zipball/fa0837fe02d617d31fbb25f990655861bb27bd1a",
-                "reference": "fa0837fe02d617d31fbb25f990655861bb27bd1a",
+                "url": "https://api.github.com/repos/symfony/polyfill-php73/zipball/a678b42e92f86eca04b7fa4c0f6f19d097fb69e2",
+                "reference": "a678b42e92f86eca04b7fa4c0f6f19d097fb69e2",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": ">=7.1"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.17-dev"
+                    "dev-main": "1.22-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -1021,29 +1128,47 @@
                 "portable",
                 "shim"
             ],
-            "time": "2020-06-06T08:46:27+00:00"
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php73/tree/v1.22.1"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-01-07T16:49:33+00:00"
         },
         {
             "name": "symfony/polyfill-php80",
-            "version": "dev-master",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php80.git",
-                "reference": "4a5b6bba3259902e386eb80dd1956181ee90b5b2"
+                "reference": "dc3063ba22c2a1fd2f45ed856374d79114998f91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/4a5b6bba3259902e386eb80dd1956181ee90b5b2",
-                "reference": "4a5b6bba3259902e386eb80dd1956181ee90b5b2",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/dc3063ba22c2a1fd2f45ed856374d79114998f91",
+                "reference": "dc3063ba22c2a1fd2f45ed856374d79114998f91",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.0.8"
+                "php": ">=7.1"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.17-dev"
+                    "dev-main": "1.22-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -1087,33 +1212,51 @@
                 "portable",
                 "shim"
             ],
-            "time": "2020-06-06T08:46:27+00:00"
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.22.1"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-01-07T16:49:33+00:00"
         },
         {
             "name": "symfony/service-contracts",
-            "version": "dev-master",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/service-contracts.git",
-                "reference": "58c7475e5457c5492c26cc740cc0ad7464be9442"
+                "reference": "96cd360b9f03a22a30cf5354e630c557bd3aac33"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/58c7475e5457c5492c26cc740cc0ad7464be9442",
-                "reference": "58c7475e5457c5492c26cc740cc0ad7464be9442",
+                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/96cd360b9f03a22a30cf5354e630c557bd3aac33",
+                "reference": "96cd360b9f03a22a30cf5354e630c557bd3aac33",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.2.5",
-                "psr/container": "^1.0"
+                "psr/container": "^1.1"
             },
             "suggest": {
                 "symfony/service-implementation": ""
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-main": "2.4-dev"
                 },
                 "thanks": {
                     "name": "symfony/contracts",
@@ -1149,6 +1292,9 @@
                 "interoperability",
                 "standards"
             ],
+            "support": {
+                "source": "https://github.com/symfony/service-contracts/tree/main"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -1163,20 +1309,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-06T13:23:11+00:00"
+            "time": "2021-03-05T22:51:52+00:00"
         },
         {
             "name": "symfony/string",
-            "version": "dev-master",
+            "version": "5.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "68e150ace76a1f7476970d3816c97be94366cb03"
+                "reference": "6d830fae00e2bb336074eae141bb00db36cd3551"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/68e150ace76a1f7476970d3816c97be94366cb03",
-                "reference": "68e150ace76a1f7476970d3816c97be94366cb03",
+                "url": "https://api.github.com/repos/symfony/string/zipball/6d830fae00e2bb336074eae141bb00db36cd3551",
+                "reference": "6d830fae00e2bb336074eae141bb00db36cd3551",
                 "shasum": ""
             },
             "require": {
@@ -1193,12 +1339,8 @@
                 "symfony/translation-contracts": "^1.1|^2",
                 "symfony/var-exporter": "^4.4|^5.0"
             },
+            "default-branch": true,
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.2-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\String\\": ""
@@ -1224,7 +1366,7 @@
                     "homepage": "https://symfony.com/contributors"
                 }
             ],
-            "description": "Symfony String component",
+            "description": "Provides an object-oriented API to strings and deals with bytes, UTF-8 code points and grapheme clusters in a unified way",
             "homepage": "https://symfony.com",
             "keywords": [
                 "grapheme",
@@ -1234,6 +1376,9 @@
                 "utf-8",
                 "utf8"
             ],
+            "support": {
+                "source": "https://github.com/symfony/string/tree/5.x"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -1248,7 +1393,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-08-17T08:48:15+00:00"
+            "time": "2021-02-17T15:27:35+00:00"
         }
     ],
     "packages-dev": [],
@@ -1264,5 +1409,5 @@
         "php": ">=7.2"
     },
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.0.0"
 }
