@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "99b898465ee948bf41d5d4d9dc384d3a",
+    "content-hash": "bf047194d37ba5617af4af048933c111",
     "packages": [
         {
             "name": "aoepeople/aoe_scheduler",
@@ -243,12 +243,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/justinrainbow/json-schema.git",
-                "reference": "2ab6744b7296ded80f8cc4f9509abbff393399aa"
+                "reference": "384f94595c621c7d0d362c5ca3a87815420d0b98"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/2ab6744b7296ded80f8cc4f9509abbff393399aa",
-                "reference": "2ab6744b7296ded80f8cc4f9509abbff393399aa",
+                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/384f94595c621c7d0d362c5ca3a87815420d0b98",
+                "reference": "384f94595c621c7d0d362c5ca3a87815420d0b98",
                 "shasum": ""
             },
             "require": {
@@ -303,9 +303,9 @@
             ],
             "support": {
                 "issues": "https://github.com/justinrainbow/json-schema/issues",
-                "source": "https://github.com/justinrainbow/json-schema/tree/5.2.11"
+                "source": "https://github.com/justinrainbow/json-schema/tree/5.x.x"
             },
-            "time": "2021-07-22T09:24:00+00:00"
+            "time": "2021-10-10T18:28:13+00:00"
         },
         {
             "name": "kkrieger85/magento-module-security-txt",
@@ -497,43 +497,6 @@
                 "source": "https://github.com/bobbyshaw/magento-footer-js/tree/0.1.3"
             },
             "time": "2017-07-26T13:42:50+00:00"
-        },
-        {
-            "name": "mhauri/mhauri-slack",
-            "version": "0.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/kkrieger85/magento-slack-1.git",
-                "reference": "5ea242e6d63d8fc8d67eade54caaec475f4262c9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/kkrieger85/magento-slack-1/zipball/5ea242e6d63d8fc8d67eade54caaec475f4262c9",
-                "reference": "5ea242e6d63d8fc8d67eade54caaec475f4262c9",
-                "shasum": ""
-            },
-            "require": {
-                "magento-hackathon/magento-composer-installer": "*"
-            },
-            "type": "magento-module",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Marcel Hauri",
-                    "email": "marcel@hauri.me"
-                },
-                {
-                    "name": "Sander Mangel",
-                    "email": "sander@sandermangel.nl"
-                }
-            ],
-            "description": "Magento Slack allows you to send specific and/or custom events to a definable room.",
-            "support": {
-                "source": "https://github.com/kkrieger85/magento-slack-1/tree/0.5.0"
-            },
-            "time": "2016-12-15T10:09:04+00:00"
         },
         {
             "name": "openmage/magento-lts",
@@ -1386,12 +1349,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "412eda2039ad5466f823c3696c0c309e6c140086"
+                "reference": "37db45dab9de8140550389b95099c86af68c4b3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/412eda2039ad5466f823c3696c0c309e6c140086",
-                "reference": "412eda2039ad5466f823c3696c0c309e6c140086",
+                "url": "https://api.github.com/repos/symfony/string/zipball/37db45dab9de8140550389b95099c86af68c4b3e",
+                "reference": "37db45dab9de8140550389b95099c86af68c4b3e",
                 "shasum": ""
             },
             "require": {
@@ -1461,7 +1424,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-09-17T07:22:48+00:00"
+            "time": "2021-10-13T18:06:36+00:00"
         }
     ],
     "packages-dev": [],
